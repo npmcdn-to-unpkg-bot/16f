@@ -1,0 +1,52 @@
+html { 
+	background: url('../images/background_night.svg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+body {
+	margin: 0px;
+	display: flex;
+
+	color: white;
+	font-family: "Avenir", Arial;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+#SplashSection {
+	margin: auto;
+	align-self: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	#SplashSection > h2, #SplashSection > p {
+		margin-top: 0;
+	}
+
+.front {
+	z-index: 1000;
+}
+
+.back {
+	position: absolute;
+}
+
+.stars {
+	height: auto;
+}
+
+#dubhacks_logo {
+	width: 500px;
+	height: auto;
+}
+
+#moon {
+	top: 70px;
+	right: 200px;
+}
+
