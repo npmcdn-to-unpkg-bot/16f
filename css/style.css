@@ -33,11 +33,22 @@ h2 {
 	z-index: 1000;
 }
 
+	h2.front, h3.front, p.front {
+		text-shadow: 0px 0px 10px rgba(0,0,0,0.20);
+	}
+
 .back {
 	position: absolute;
 }
 
 .stars {
+	height: auto;
+}
+
+.cloud {
+	bottom: -50px;
+	left: -50px;
+	width: 105vw;
 	height: auto;
 }
 

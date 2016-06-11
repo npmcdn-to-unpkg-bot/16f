@@ -37,11 +37,20 @@
 			document.getElementById("SplashSection").appendChild(currStar);
 		}
 
-		// create star
+		// create moon
 		var moon = document.createElement("img");
 		moon.className = "back";
 		moon.id = "moon";
 		moon.src = "images/moon.svg";
 		document.getElementById("SplashSection").appendChild(moon);
+
+		// create clouds
+		for (var j = 5; j >= 1; j--) {
+			var currCloud = document.createElement("img");
+			currCloud.className = "cloud back";
+			currCloud.src = "images/cloud_" + j + ".svg";
+			document.getElementById("SplashSection").appendChild(currCloud);
+		}
+		
 	}
 })();
