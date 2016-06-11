@@ -1,6 +1,7 @@
 html { 
 	background: url('../images/background_night.svg') no-repeat center center fixed;
 	background-size: cover;
+	background-color: #001837;
 }
 
 body {
@@ -46,7 +47,7 @@ h2 {
 }
 
 #moon {
-	top: 70px;
-	right: 200px;
+	top: 6vh;
+	right: 8vw;
 }
 
