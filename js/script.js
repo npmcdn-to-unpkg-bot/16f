@@ -46,10 +46,20 @@
 
 		// create clouds
 		for (var j = 5; j >= 1; j--) {
-			var currCloud = document.createElement("img");
-			currCloud.className = "cloud back";
-			currCloud.src = "images/cloud_" + j + ".svg";
-			document.getElementById("SplashSection").appendChild(currCloud);
+			if (j > 2) {
+				var currCloud = document.createElement("img");
+				currCloud.className = "cloud back";
+				currCloud.src = "images/cloud_" + j + ".svg";
+				document.getElementById("SplashSection").appendChild(currCloud);
+
+				if (j == 5) {
+					currCloud.style.bottom = "-250px";
+					currCloud.style.left = "-200px";
+				} else if (j == 4) {
+					currCloud.style.bottom = "-225px";
+				}
+			}
+			
 		}
 		
 	}
