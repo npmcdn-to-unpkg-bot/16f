@@ -65,7 +65,7 @@ h2 {
 .cloud {
 	bottom: -200px;
 	left: -50px;
-	width: 180vw;
+	width: 180vw; /* width is 6.13 times the length of the height */
 	height: auto;
 }
 
@@ -157,7 +157,7 @@ input[type=submit] {
 
     text-align: center;
 
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 	input[type=submit]:hover {

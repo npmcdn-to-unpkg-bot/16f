@@ -4,6 +4,7 @@
 	window.onload = function() {
 		//centerScreen();
 		generateBackground();
+		moveClouds();
 	}
 
 	window.onresize = function() {
@@ -46,7 +47,7 @@
 		// create clouds
 		for (var j = 5; j >= 1; j--) {
 			//if (j > 2) {
-				var currCloud = createNewElement("img", "cloud back", "", "");
+				var currCloud = createNewElement("img", "cloud back", "cloud" + j, "");
 				currCloud.src = "images/cloud_" + j + ".svg";
 				document.getElementById("SplashSection").appendChild(currCloud);
 
@@ -102,6 +103,42 @@
 		document.getElementById("links").appendChild(envelope_link);
 		
 
+	}
+
+	function moveClouds () {
+		for (var i = 1; i <=5; i++) {
+			// setInterval(function(){
+			// 	$("#cloud" + i).css("left", $("#cloud" + i).css("left") - 10 + "px");
+			// 	console.log("hi" + i);
+			// }, 30);
+			
+			var speed;
+			if (i == 1) {
+				speed = 70000;
+			} else if (i == 2) {
+				speed = 50000;
+			} else if (i == 3) {
+				speed = 60000;
+			} else if (i == 4) {
+				speed = 70000;
+			} else {
+				speed = 50000;
+			}
+			console.log("hello!" + i);
+			//setInterval(function(){
+				console.log("hi!" + i);
+				$("#cloud" + i).velocity({
+					"left": "-= 70vw"
+				}, speed, function(){
+					$("#cloud" + i).velocity({
+						"left": "+= 70vw"
+					}, speed);
+				});
+			//}, 1000);
+			
+
+			
+		}
 	}
 
 	// A helper method to create a new element and append it to the DOM faster.
