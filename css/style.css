@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Nevis;
+	src: url(../fonts/nevis.ttf);
+}
+
+@font-face {
+	font-family: Typographica;
+	src: url(../fonts/TypoGraphica.otf);
+}
+
 html { 
 	background: url('../images/background_night.svg') no-repeat center center fixed;
 	background-size: cover;
@@ -8,8 +18,8 @@ body {
 	margin: 0px;
 	display: flex;
 
-	color: white;
-	font-family: "Avenir", Arial;
+	/*color: white;*/
+	font-family: "Roboto", Arial;
 }
 
 h2 {
@@ -17,6 +27,17 @@ h2 {
 }
 
 #SplashSection {
+	display: flex;
+	align-items: center;
+
+	overflow: hidden;
+	position: relative;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+#front_layer {
 	margin: auto;
 	align-self: center;
 
@@ -25,7 +46,7 @@ h2 {
 	align-items: center;
 }
 
-	#SplashSection > h2, #SplashSection > p {
+	#front_layer > h2, #front_layer > p {
 		margin-top: 0;
 	}
 
@@ -34,7 +55,7 @@ h2 {
 }
 
 	h2.front, h3.front, p.front {
-		text-shadow: 0px 0px 10px rgba(0,0,0,0.20);
+		/*text-shadow: 0px 0px 10px rgba(0,0,0,0.20);*/
 	}
 
 .back {
@@ -48,7 +69,7 @@ h2 {
 .cloud {
 	bottom: -200px;
 	left: -50px;
-	width: 105vw;
+	width: 190vw;
 	height: auto;
 }
 
@@ -57,7 +78,20 @@ h2 {
 	height: auto;
 }
 
+#moto {
+	font-family: Typographica;
+	letter-spacing: 2px;
+	font-size: 25pt;
+}
+
+#date {
+	font-family: Nevis;
+	font-size: 40pt;
+}
+
 #moon {
+	width: 40vh;
+	height: auto;
 	top: 6vh;
 	right: 8vw;
 }
