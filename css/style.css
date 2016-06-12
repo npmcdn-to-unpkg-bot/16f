@@ -114,7 +114,12 @@ h2 {
 
 .fa {
 	color: #eb1b74;
+	transition: color 0.3s ease;
 }
+
+	.fa:hover {
+		color: #CB1A63;
+	}
 
 #fb {
 	
@@ -157,7 +162,7 @@ input[type=submit] {
 
     text-align: center;
 
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 	input[type=submit]:hover {
