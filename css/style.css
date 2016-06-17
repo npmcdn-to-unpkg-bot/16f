@@ -8,10 +8,10 @@
 	src: url(../fonts/TypoGraphica.otf);
 }
 
-html { 
-	background: url('../images/background_night.svg') no-repeat center center fixed;
+html {
+	background: no-repeat center center fixed;
 	background-size: cover;
-	background-color: #001837;
+	background-color: white;
 }
 
 body {
@@ -75,7 +75,7 @@ h2 {
 }
 
 #moto {
-	font-family: Typographica;
+	font-family: Nevis;
 	letter-spacing: 2px;
 	font-size: 25pt;
 }
@@ -86,30 +86,26 @@ h2 {
 
 	margin-bottom: 20px;
 	margin-top: 100px;
-}
 
-#moon {
-	width: 40vh;
-	height: auto;
-	top: 10vh;
-	right: 8vw;
+	letter-spacing: -4px;
+  color: white;
 }
 
 #pink_logo {
-	width: 10vw;
+	width: 7vw;
 	height: auto;
-	bottom: 50px;
-	right: 50px;
+	left: 60px;
+	top: 60px;
 }
 
 #links {
-	top: 30px;
-	right: 30px;
+	top: 120px;
+	right: 80px;
 }
 
 	#links > a {
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 30px;
+		margin-right: 30px;
 	}
 
 .fa {
@@ -122,7 +118,7 @@ h2 {
 	}
 
 #fb {
-	
+
 }
 
 form {
@@ -169,15 +165,3 @@ input[type=submit] {
 		cursor: pointer;
 		background-color: #CB1A63;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
