@@ -30,7 +30,7 @@ body {
 	align-items: center;
 	width: 600px;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 125px;
 }
 .row {
 	display: table;
@@ -84,7 +84,7 @@ img.airplane {
 	width: 5vw;
 	height: auto;
 
-	margin-top: 40px;
+	margin-top: 18px;
 }
 
 #front_layer {
@@ -112,12 +112,17 @@ img.airplane {
 }
 
 #logo {
-	margin-top: 150px;
+	margin-top: 100px;
+}
+
+#logo img {
+	width: 500px;
+	height: auto;
 }
 
 .mainlogo {
 	float:left;
-	padding: 50px;
+	padding: 40px;
 	display: table;
 }
 
@@ -130,11 +135,15 @@ img.airplane {
 #date {
 	font-family: Nevis;
 	font-size: 40pt;
+	margin-top: 5px;
+	margin-bottom: 100px;
 
-	margin-bottom: 150px;
-
-	letter-spacing: -4px;
+	letter-spacing: -3px;
 	color: white;
+}
+
+#input {
+	margin-top: 10px;
 }
 
 #pink_logo {
@@ -151,10 +160,10 @@ img.airplane {
 }
 
 .links img {
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: 14px;
+	margin-left: 14px;
 	width: auto;
-	height: 40px;
+	height: 30px;
 	line-height: auto;
 }
 
