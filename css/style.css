@@ -22,8 +22,48 @@ body {
 	font-family: "Roboto", Arial;
 }
 
+.header{
+	padding: 50px;
+	display: table;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+	margin: 0 auto;
+	padding: 50px;
+}
+.row {
+		display: table;
+}
+
+.circles {
+
+}
+
 h2 {
 	font-size: 2.5em;
+	color: black;
+
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+
+}
+li {
+	display: inline;
+}
+
+img.airplane {
+	width: 50px;
+}
+
+img.circle {
+	width: 100px;
 }
 
 #SplashSection {
@@ -58,10 +98,6 @@ h2 {
 	position: absolute;
 }
 
-.stars {
-	height: auto;
-}
-
 .cloud {
 	bottom: -200px;
 	left: -50px;
@@ -69,9 +105,24 @@ h2 {
 	height: auto;
 }
 
-#dubhacks_logo {
-	width: 500px;
-	height: auto;
+ul circles {
+	width: 15px;
+}
+
+#circles > a {
+		margin-left: 30px;
+		margin-right: 30px;
+}
+
+#logo {
+	display: block;
+	width: 100%;
+	height: 100%;
+background: url(../images/graffiti_logo.png) 50% 50% no-repeat;
+}
+
+.mainlogo {
+	float:left;
 }
 
 #moto {
@@ -98,15 +149,12 @@ h2 {
 	top: 60px;
 }
 
-#links {
-	top: 120px;
+.links {
+	align-items: right;
+	display: table;
 	right: 80px;
+	float: right;
 }
-
-	#links > a {
-		margin-left: 30px;
-		margin-right: 30px;
-	}
 
 .fa {
 	color: #eb1b74;
@@ -116,10 +164,6 @@ h2 {
 	.fa:hover {
 		color: #CB1A63;
 	}
-
-#fb {
-
-}
 
 form {
 	display: flex;
