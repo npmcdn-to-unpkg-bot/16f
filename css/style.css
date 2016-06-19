@@ -1,3 +1,50 @@
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+	#logo img {
+	  max-width: 320px!important;
+	}
+
+	#logo  {
+		margin-top: 5vh!important;
+	}
+
+	.navbar {
+		display: none!important;
+		visibility: hidden!important;
+	}
+
+	#input {
+		max-width: 320px!important;
+		width: 90%!important;
+	}
+
+	.cloud {
+		width: 114vw!important;
+		bottom: -15px!important;
+	}
+
+	#date {
+		color: #000!important;
+		margin-bottom: 10px!important;
+		font-size: 25pt!important;
+	}
+
+	#cloud1, #cloud4 {
+	    -webkit-animation: none!important;
+	    animation: none!important;
+	}
+
+	#cloud2, #cloud5 {
+	    -webkit-animation: none!important;
+	    animation: none!important;
+	}
+
+	#cloud3 {
+	    -webkit-animation: none!important;
+	    animation: none!important;
+	}
+
+}
+
 @font-face {
 	font-family: Nevis;
 	src: url(../fonts/nevis.ttf);
@@ -231,7 +278,7 @@ input[type=text] {
     border-radius: 5px;
     color: black;
     width: 500px;
-	height: 12px;
+		height: 12px;
     padding: 20px;
 
     font-family: 'Roboto';
