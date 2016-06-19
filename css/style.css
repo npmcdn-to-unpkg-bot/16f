@@ -12,6 +12,7 @@ html {
 	background: no-repeat center center fixed;
 	background-size: cover;
 	background-color: white;
+    overflow: hidden;
 }
 
 body {
