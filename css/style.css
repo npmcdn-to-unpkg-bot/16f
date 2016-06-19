@@ -13,6 +13,7 @@ html {
 	background-size: cover;
 	background-color: white;
     overflow: hidden;
+    height: 100%;
 }
 
 body {
@@ -28,10 +29,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 600px;
+	width: 60%;
+    height: 90vh;
 	margin: 0 auto;
-	padding: 50px;
-    padding-top: 150px;
+	padding-left: : 50px;
+    padding-right: : 50px;
+    padding-bottom: : 50px;
+    padding-top: 15vh;
     z-index: 50;
 }
 .row {
@@ -41,11 +45,14 @@ body {
 #circle_airplane {
 	display: flex;
 	flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
 }
 
 .circle {
-	width: 9vw;
-	height: auto;
+	height: 16vh;
+    width: auto;
 	align-items: center;
 }
 
@@ -53,6 +60,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {
@@ -83,8 +92,8 @@ li {
 }
 
 img.airplane {
-	width: 4vw;
-	height: auto;
+	width: auto;
+	height: 6vh;
 	margin-top: 13px;
 }
 
@@ -133,8 +142,8 @@ img.airplane {
     animation-iteration-count:infinite;
 }
 
-@-webkit-keyframes move_cloud {0%{left:-50%;} 50%{left:-5%;} 100%{left:-50%;}}
-@keyframes move_cloud {0%{left:-50%;} 50%{left:-10%;} 100%{left:-50%;}}
+@-webkit-keyframes move_cloud {0%{left:-50vw;} 50%{left:-5vw;} 100%{left:-50vw;}}
+@keyframes move_cloud {0%{left:-50vw;} 50%{left:-10vw;} 100%{left:-50vw;}}
 
 -webkit-transform: translateZ(0);
 -moz-transform: translateZ(0);
@@ -147,12 +156,13 @@ transform: translateZ(0);
 }
 
 #logo {
-	margin-top: 50px;
+	margin-top: 10vh;
 }
 
 #logo img {
-	width: 400px;
-	height: auto;
+    max-width: 500px;
+    width: auto;
+	height: 12vh;
 }
 
 .mainlogo {
@@ -217,7 +227,7 @@ input[type=text] {
     border-radius: 5px;
     color: black;
     width: 500px;
-		height: 12px;
+	height: 12px;
     padding: 20px;
 
     font-family: 'Roboto';
@@ -246,7 +256,7 @@ input[type=submit] {
     transition: all 0.3s ease;
 }
 
-	input[type=submit]:hover {
-		cursor: pointer;
-		background-color: #CB1A63;
-	}
+input[type=submit]:hover {
+	cursor: pointer;
+	background-color: #CB1A63;
+}
