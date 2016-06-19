@@ -22,7 +22,6 @@ body {
 	/*color: white;*/
 	font-family: "Roboto", Arial;
 
-	background-color: grey;
 }
 
 .container {
@@ -32,6 +31,7 @@ body {
 	width: 600px;
 	margin: 0 auto;
 	padding: 50px;
+    padding-top: 150px;
     z-index: 50;
 }
 .row {
@@ -86,7 +86,7 @@ img.airplane {
 	width: 5vw;
 	height: auto;
 
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 #front_layer {
@@ -143,8 +143,12 @@ img.airplane {
 -o-transform: translateZ(0);
 transform: translateZ(0);
 
+#circles_planes {
+    padding-bottom: 0px;
+}
+
 #logo {
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 .mainlogo {
@@ -163,7 +167,7 @@ transform: translateZ(0);
 	font-family: Nevis;
 	font-size: 40pt;
 
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 
 	letter-spacing: -4px;
 	color: white;
