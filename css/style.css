@@ -12,6 +12,7 @@ html {
 	background: no-repeat center center fixed;
 	background-size: cover;
 	background-color: white;
+    overflow: hidden;
 }
 
 body {
@@ -21,7 +22,6 @@ body {
 	/*color: white;*/
 	font-family: "Roboto", Arial;
 
-	background-color: grey;
 }
 
 .container {
@@ -30,7 +30,9 @@ body {
 	align-items: center;
 	width: 600px;
 	margin: 0 auto;
-	padding: 125px;
+	padding: 50px;
+    padding-top: 150px;
+    z-index: 50;
 }
 .row {
 	display: table;
@@ -42,7 +44,7 @@ body {
 }
 
 .circle {
-	width: 10vw;
+	width: 9vw;
 	height: auto;
 	align-items: center;
 }
@@ -81,10 +83,9 @@ li {
 }
 
 img.airplane {
-	width: 5vw;
+	width: 4vw;
 	height: auto;
-
-	margin-top: 18px;
+	margin-top: 13px;
 }
 
 #front_layer {
@@ -111,12 +112,46 @@ img.airplane {
 	height: auto;
 }
 
+#cloud1, #cloud4 {
+    -webkit-animation: move_cloud 40s ease-in-out 0s;
+    -webkit-animation-iteration-count:infinite;
+    animation: move_cloud 40s ease-in-out 0s;
+    animation-iteration-count:infinite;
+}
+
+#cloud2, #cloud5 {
+    -webkit-animation: move_cloud 70s ease-in-out 0s;
+    -webkit-animation-iteration-count:infinite;
+    animation: move_cloud 70s ease-in-out 0s;
+    animation-iteration-count:infinite;
+}
+
+#cloud3 {
+    -webkit-animation: move_cloud 55s ease-in-out 0s;
+    -webkit-animation-iteration-count:infinite;
+    animation: move_cloud 55s ease-in-out 0s;
+    animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes move_cloud {0%{left:-50%;} 50%{left:-5%;} 100%{left:-50%;}}
+@keyframes move_cloud {0%{left:-50%;} 50%{left:-10%;} 100%{left:-50%;}}
+
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+
+#circles_planes {
+    padding-bottom: 0px;
+}
+
 #logo {
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 #logo img {
-	width: 500px;
+	width: 400px;
 	height: auto;
 }
 
@@ -126,19 +161,12 @@ img.airplane {
 	display: table;
 }
 
-#moto {
-	font-family: Nevis;
-	letter-spacing: 2px;
-	font-size: 25pt;
-}
-
 #date {
 	font-family: Nevis;
-	font-size: 40pt;
+	font-size: 30pt;
 	margin-top: 5px;
-	margin-bottom: 100px;
-
-	letter-spacing: -3px;
+	margin-bottom: 50px;
+	letter-spacing: -2px;
 	color: white;
 }
 
@@ -154,7 +182,8 @@ img.airplane {
 }
 
 .links {
-	padding: 50px;
+	padding-top: 50px;
+	padding-right:40px;
 	top: 0;
 	right: 0;
 }
@@ -187,16 +216,17 @@ input[type=text] {
     border: none;
     border-radius: 5px;
     color: black;
-    width: 600px;
+    width: 500px;
+		height: 12px;
     padding: 20px;
 
     font-family: 'Roboto';
     font-weight: 100;
-    font-size: 13pt;
+    font-size: 12pt;
 
     text-align: center;
 
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 input[type=submit] {
