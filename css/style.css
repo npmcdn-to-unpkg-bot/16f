@@ -110,7 +110,27 @@ img.airplane {
 	left: -50px;
 	width: 180vw; /* width is 6.13 times the length of the height */
 	height: auto;
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite;
 }
+
+#cloud1, #cloud4 {
+    -webkit-animation: move_cloud 40s ease-in-out 0s;
+    animation: move_cloud 40s ease-in-out 0s;
+}
+
+#cloud2, #cloud5 {
+    -webkit-animation: move_cloud 70s ease-in-out 0s;
+    animation: move_cloud 70s ease-in-out 0s;
+}
+
+#cloud3 {
+    -webkit-animation: move_cloud 55s ease-in-out 0s;
+    animation: move_cloud 55s ease-in-out 0s;
+}
+
+@-webkit-keyframes move_cloud {0%{left:-50%;} 50%{left:-5%;} 100%{left:-50%;}}
+@keyframes move_cloud {0%{left:-50%;} 50%{left:-10%;} 100%{left:-50%;}}
 
 #logo {
 	margin-top: 150px;
