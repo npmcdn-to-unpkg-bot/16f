@@ -144,7 +144,7 @@ img.airplane {
 transform: translateZ(0);
 
 #logo {
-	margin-top: 150px;
+	margin-top: 10vh;
 }
 
 .mainlogo {
@@ -163,7 +163,8 @@ transform: translateZ(0);
 	font-family: Nevis;
 	font-size: 40pt;
 
-	margin-bottom: 150px;
+	margin-bottom: 100px;
+    margin-top: 0;
 
 	letter-spacing: -4px;
 	color: white;
