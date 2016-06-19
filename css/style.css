@@ -31,6 +31,7 @@ body {
 	width: 600px;
 	margin: 0 auto;
 	padding: 50px;
+    z-index: 50;
 }
 .row {
 	display: table;
