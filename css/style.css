@@ -66,6 +66,8 @@ body {
 
 .navbar {
 	position: absolute;
+    height: 10vh;
+    padding-top: 5vh !important;
 }
 
 h1 {
@@ -167,8 +169,12 @@ transform: translateZ(0);
 
 .mainlogo {
 	float:left;
-	padding: 40px;
 	display: table;
+    padding-left: 3vw;
+}
+
+.mainlogo img {
+    height: 100%;
 }
 
 #date {
@@ -185,10 +191,8 @@ transform: translateZ(0);
 }
 
 #pink_logo {
-	width: 7vw;
-	height: auto;
-	left: 60px;
-	top: 60px;
+	width: auto;
+	height: 10vh;
 }
 
 .links {
@@ -202,7 +206,7 @@ transform: translateZ(0);
 	margin-right: 14px;
 	margin-left: 14px;
 	width: auto;
-	height: 30px;
+	height: 7vh;
 	line-height: auto;
 }
 
