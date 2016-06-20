@@ -301,7 +301,8 @@ input[type=submit] {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 12pt;
-
+		-webkit-appearance: none!important;
+		-webkit-appearance: none;
     text-align: center;
 
     transition: all 0.3s ease;
