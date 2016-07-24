@@ -1,4 +1,5 @@
 @media only screen and (min-width : 320px) and (max-width : 768px) {
+
 	#logo img {
 	  max-width: 320px!important;
 	}
@@ -17,7 +18,7 @@
 		width: 90%!important;
 	}
 
-	.cloud {
+	/*.cloud {
 		width: 114vw!important;
 		bottom: -15px!important;
 	}
@@ -41,7 +42,7 @@
 	#cloud3 {
 	    -webkit-animation: none!important;
 	    animation: none!important;
-	}
+	}*/
 
 }
 
@@ -67,7 +68,7 @@ body {
 	margin: 0px;
 	display: flex;
 
-	/*color: white;*/
+	background-color: black;
 	font-family: "Roboto", Arial;
 
 }
@@ -163,11 +164,11 @@ img.airplane {
 	position: absolute;
 }
 
-.cloud {
+/*.cloud {
 	bottom: -200px;
 	left: -50px;
 	width: 180vw; /* width is 6.13 times the length of the height */
-	height: auto;
+	/*height: auto;
 }
 
 #cloud1, #cloud4 {
@@ -189,7 +190,7 @@ img.airplane {
     -webkit-animation-iteration-count:infinite;
     animation: move_cloud 55s ease-in-out 0s;
     animation-iteration-count:infinite;
-}
+}*/
 
 @-webkit-keyframes move_cloud {0%{left:-50vw;} 50%{left:-5vw;} 100%{left:-50vw;}}
 @keyframes move_cloud {0%{left:-50vw;} 50%{left:-10vw;} 100%{left:-50vw;}}
