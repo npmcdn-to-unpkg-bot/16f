@@ -18,32 +18,6 @@
 		width: 90%!important;
 	}
 
-	/*.cloud {
-		width: 114vw!important;
-		bottom: -15px!important;
-	}
-
-	#date {
-		color: #000!important;
-		margin-bottom: 10px!important;
-		font-size: 25pt!important;
-	}
-
-	#cloud1, #cloud4 {
-	    -webkit-animation: none!important;
-	    animation: none!important;
-	}
-
-	#cloud2, #cloud5 {
-	    -webkit-animation: none!important;
-	    animation: none!important;
-	}
-
-	#cloud3 {
-	    -webkit-animation: none!important;
-	    animation: none!important;
-	}*/
-
 }
 
 @font-face {
@@ -68,7 +42,7 @@ body {
 	margin: 0px;
 	display: flex;
 
-	background-color: black;
+	background-color: rgb(14,16,27);
 	font-family: "Roboto", Arial;
 
 }
@@ -76,15 +50,16 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/*align-items: center;*/
 	width: 60%;
-    height: 90vh;
+  height: 90vh;
 	margin: 0 auto;
 	padding-left: : 50px;
     padding-right: : 50px;
     padding-bottom: : 50px;
     padding-top: 15vh;
     z-index: 50;
+	float: left;
 }
 .row {
 	display: table;
@@ -134,11 +109,15 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	font-size: 36px;
+	font-family: "Nevis";
+	font-weight: bold;
 
 }
 
 li {
 	display: inline;
+	text-align: left;
 }
 
 img.airplane {
@@ -147,6 +126,14 @@ img.airplane {
 	margin-top: 13px;
 }
 
+#moon {
+	margin-left:300px;
+	z-index: 100;
+
+}
+#astronaut {
+	margin-bottom: 500px;
+}
 #front_layer {
 	margin: auto;
 	align-self: center;
@@ -154,6 +141,10 @@ img.airplane {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.mainbar {
+  color: white;
+
 }
 
 .front {
@@ -163,34 +154,10 @@ img.airplane {
 .back {
 	position: absolute;
 }
-
-/*.cloud {
-	bottom: -200px;
-	left: -50px;
-	width: 180vw; /* width is 6.13 times the length of the height */
-	/*height: auto;
+.container {
+	flex: auto;
+	float: inherit;
 }
-
-#cloud1, #cloud4 {
-    -webkit-animation: move_cloud 40s ease-in-out 0s;
-    -webkit-animation-iteration-count:infinite;
-    animation: move_cloud 40s ease-in-out 0s;
-    animation-iteration-count:infinite;
-}
-
-#cloud2, #cloud5 {
-    -webkit-animation: move_cloud 70s ease-in-out 0s;
-    -webkit-animation-iteration-count:infinite;
-    animation: move_cloud 70s ease-in-out 0s;
-    animation-iteration-count:infinite;
-}
-
-#cloud3 {
-    -webkit-animation: move_cloud 55s ease-in-out 0s;
-    -webkit-animation-iteration-count:infinite;
-    animation: move_cloud 55s ease-in-out 0s;
-    animation-iteration-count:infinite;
-}*/
 
 @-webkit-keyframes move_cloud {0%{left:-50vw;} 50%{left:-5vw;} 100%{left:-50vw;}}
 @keyframes move_cloud {0%{left:-50vw;} 50%{left:-10vw;} 100%{left:-50vw;}}
@@ -212,7 +179,7 @@ transform: translateZ(0);
 #logo img {
     max-width: 500px;
     width: auto;
-	height: 12vh;
+		height: 12vh;
 }
 
 .mainlogo {
@@ -244,7 +211,6 @@ transform: translateZ(0);
 }
 
 .links {
-	padding-top: 50px;
 	padding-right:3vw;
 	top: 0;
 	right: 0;
