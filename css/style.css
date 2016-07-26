@@ -1,90 +1,25 @@
 @media only screen and (min-width : 320px) and (max-width : 768px) {
 
-	#logo img {
-	  max-width: 320px!important;
-	}
-
-	#logo  {
-		margin-top: 5vh!important;
-	}
-
-	.navbar {
+.navbar {
 		display: none!important;
 		visibility: hidden!important;
 	}
 
-	#input {
+#input {
 		max-width: 320px!important;
 		width: 90%!important;
 	}
 
 }
 
-@font-face {
-	font-family: Nevis;
-	src: url(../fonts/nevis.ttf);
-}
-
-@font-face {
-	font-family: Typographica;
-	src: url(../fonts/TypoGraphica.otf);
-}
-
-html {
-	background: no-repeat center center fixed;
-	background-size: cover;
-	background-color: white;
-    overflow: hidden;
-    height: 100%;
-}
-
 body {
 	margin: 0px;
 	display: flex;
-
 	background-color: rgb(14,16,27);
-	font-family: "Roboto", Arial;
-
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	/*align-items: center;*/
-	width: 60%;
-  height: 90vh;
-	margin: 0 auto;
-	padding-left: : 50px;
-    padding-right: : 50px;
-    padding-bottom: : 50px;
-    padding-top: 15vh;
-    z-index: 50;
-	float: left;
-}
 .row {
 	display: table;
-}
-
-#circle_airplane {
-	display: flex;
-	flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-}
-
-.circle {
-	height: 16vh;
-    width: auto;
-	align-items: center;
-}
-
-#circle_airplane div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .navbar {
@@ -93,17 +28,6 @@ body {
   padding-top: 5vh !important;
 }
 
-h1 {
-	font-family: Typographica;
-	font-size: 3.5em;
-	color: black;
-}
-
-h2 {
-	font-size: 2.5em;
-	color: black;
-
-}
 
 ul {
 	list-style-type: none;
@@ -120,12 +44,6 @@ li {
 	text-align: left;
 }
 
-img.airplane {
-	width: auto;
-	height: 6vh;
-	margin-top: 13px;
-}
-
 #moon {
 	margin-left:300px;
 	z-index: 100;
@@ -134,14 +52,7 @@ img.airplane {
 #astronaut {
 	margin-bottom: 500px;
 }
-#front_layer {
-	margin: auto;
-	align-self: center;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 .mainbar {
   color: white;
 
@@ -153,23 +64,6 @@ img.airplane {
 
 .back {
 	position: absolute;
-}
-.container {
-	flex: auto;
-	float: inherit;
-}
-
-@-webkit-keyframes move_cloud {0%{left:-50vw;} 50%{left:-5vw;} 100%{left:-50vw;}}
-@keyframes move_cloud {0%{left:-50vw;} 50%{left:-10vw;} 100%{left:-50vw;}}
-
--webkit-transform: translateZ(0);
--moz-transform: translateZ(0);
--ms-transform: translateZ(0);
--o-transform: translateZ(0);
-transform: translateZ(0);
-
-#circles_planes {
-    padding-bottom: 0px;
 }
 
 #logo {
@@ -192,19 +86,6 @@ transform: translateZ(0);
     height: inherit;
 }
 
-#date {
-	font-family: Nevis;
-	font-size: 30pt;
-	margin-top: 5px;
-	margin-bottom: 50px;
-	letter-spacing: -2px;
-	color: white;
-}
-
-#input {
-	margin-top: 10px;
-}
-
 #pink_logo {
 	width: auto;
 	height: 10vh;
@@ -222,60 +103,4 @@ transform: translateZ(0);
 	width: auto;
 	height: 5vh;
 	line-height: auto;
-}
-
-.fa {
-	color: #eb1b74;
-	transition: color 0.3s ease;
-}
-
-	.fa:hover {
-		color: #CB1A63;
-	}
-
-form {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-input[type=text] {
-    background-color: #EAEAEA;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    width: 500px;
-		height: 12px;
-    padding: 20px;
-
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-size: 12pt;
-
-    text-align: center;
-
-    margin-bottom: 0;
-}
-
-input[type=submit] {
-    background-color: #eb1b74;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    width: auto;
-    padding: 10px;
-		margin-top: 15px;
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 12pt;
-		-webkit-appearance: none!important;
-		-webkit-appearance: none;
-    text-align: center;
-
-    transition: all 0.3s ease;
-}
-
-input[type=submit]:hover {
-	cursor: pointer;
-	background-color: #CB1A63;
 }
