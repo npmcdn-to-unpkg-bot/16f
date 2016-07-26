@@ -35,14 +35,22 @@ ul {
 	margin: 0;
 	padding: 0;
 	font-size: 36px;
-	font-family: "Nevis";
+	font-family: Nevis;
 	font-weight: bold;
-
+}
+@font-face {
+	font-family: Nevis;
+	src: url(../fonts/nevis.ttf);
+	font-weight: bold;
 }
 
 li {
 	display: inline;
 	text-align: left;
+	font-size: 36px;
+	font-family: "Nevis";
+	font-weight: bold;
+	color: white;
 }
 
 #moon {
@@ -56,7 +64,7 @@ li {
 #astronaut {
 	z-index: 1000;
 	position: absolute;
-	left: 400px;
+	left: 340px;
 	top: 180px;
 }
 
@@ -106,4 +114,19 @@ li {
 	width: auto;
 	height: 5vh;
 	line-height: auto;
+}
+.header {
+	font-family: Nevis;
+	position: absolute;
+	top:65px;
+	left: 150px;
+}
+#FAQ {
+	padding: 10px;
+}
+#Sponsors {
+	padding: 5px;
+}
+#Team {
+	padding: 5px;
 }
