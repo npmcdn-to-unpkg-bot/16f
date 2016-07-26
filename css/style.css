@@ -15,9 +15,10 @@
 body {
 	margin: 0px;
 	display: flex;
+}
+html {
 	background-color: rgb(14,16,27);
 }
-
 .row {
 	display: table;
 }
@@ -45,18 +46,20 @@ li {
 }
 
 #moon {
-	margin-left:300px;
+	position: absolute;
+	left:280px;
+	bottom:0px;
+	top: -20px;
 	z-index: 100;
 
 }
 #astronaut {
-	margin-bottom: 500px;
+	z-index: 1000;
+	position: absolute;
+	left: 400px;
+	top: 180px;
 }
 
-.mainbar {
-  color: white;
-
-}
 
 .front {
 	z-index: 1000;
