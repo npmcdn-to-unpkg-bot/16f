@@ -368,7 +368,13 @@ input[type=submit] {
 	#big_dubhacks_logo {
 		width: 25vw;
 		margin: 0 2.5vw;
+
+		transition: all 1.7s ease;
 	}
+
+		#big_dubhacks_logo:hover {
+			transform: scale(1.1, 1.1) rotate(360deg);
+		}
 
 	#skyline {
 		width: 102vw;
