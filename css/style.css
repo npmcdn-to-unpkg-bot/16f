@@ -51,7 +51,7 @@ ul {
 li {
 	display: inline;
 	text-align: left;
-	font-size: 36px;
+	font-size: 30px;
 	font-family: "Nevis";
 	font-weight: bold;
 	color: white;
@@ -147,24 +147,64 @@ li {
 	right: 400px;
 	z-index: 1000;
 }
-/*#first_button {
+#first_button {
 	z-index: 1000;
-	position: absolute;
+	white-space: nowrap;
 }
 #dates {
-	color: rgb(255,0,127) !important;
+	color: rgb(153,0,76) !important;
 	font-size: 18px !important;
 	border: 2px;
 	border-color: pink;
-	position: absolute;
-	top: 350px;
-	right: 150px;
+	position:absolute !important;
+	left: 1250px;
+	top: 325px;
+	z-index: 100;
 }
 #uw {
-	color: rgb(255,0,127) !important;
-	font-size: 18px !important;
+	color: rgb(153,0,76) !important;
+font-size: 16px !important;
+position: absolute;
+left: 1250px;
+top: 350px;
+z-index: 100;
 }
 #seattle {
-	color: rgb(255,0,127) !important;
+	color: rgb(153,0,76) !important;
 	font-size: 18px !important;
-}*/
+	position: absolute;
+	left: 1250px;
+	top: 370px;
+	z-index:100;
+}
+#second_button{
+	z-index: 100;
+	white-space:nowrap;
+}
+#register{
+	color: rgb(153,0,76);
+	font-size: 22px;
+	position: absolute;
+	left: 1250px;
+	top: 400px;
+	z-index: 100;
+}
+#third_button {
+	z-index: 100;
+	white-space: nowrap;
+}
+#apply {
+	color: rgb(153,0,76);
+	font-size: 22px;
+	position:absolute;
+	left: 1250px;
+	top: 430px;
+	z-index: 100;
+}
+.first_button {
+	z-index: 1000;
+	white-space: nowrap;
+}
+.second_button {
+	border: 2px solid rgb(153,0,76);
+}
