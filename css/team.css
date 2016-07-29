@@ -1,0 +1,46 @@
+
+div.container {
+
+background: #ffffff;
+background: linear-gradient(#e82275, #f28767);
+border-radius: 6px;
+height: 120px;
+}
+
+@font-face {
+	font-family: Nevis;
+	src: url(../fonts/nevis.ttf);
+}
+
+@font-face {
+	font-family: Roboto thin;
+	src: url(../fonts/Roboto.otf);
+}
+
+h1 {
+	font-family: Nevis;
+	font-size: 40pt;
+  font-kerning: 20
+	color: black;
+}
+
+#grad {
+  background: linear-gradient(to bottom right, #, #e82275);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+    height: 90vh;
+	margin: 0 auto;
+	padding-left: : 50px;
+    padding-right: : 50px;
+    padding-bottom: : 50px;
+    padding-top: 15vh;
+    z-index: 50;
+}
+.row {
+	display: table;
+}
