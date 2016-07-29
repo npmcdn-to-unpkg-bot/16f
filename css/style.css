@@ -1,13 +1,17 @@
 @media only screen and (min-width : 320px) and (max-width : 768px) {
 
-.navbar {
+	.navbar {
 		display: none!important;
 		visibility: hidden!important;
 	}
 
-#input {
+	#input {
 		max-width: 320px!important;
 		width: 90%!important;
+	}
+
+	.header ul {
+		display: none;
 	}
 
 }
