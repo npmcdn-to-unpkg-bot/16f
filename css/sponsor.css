@@ -325,14 +325,107 @@ input[type=submit] {
 
 #footer_container {
 	background: linear-gradient(#F17D69, #EA1B75);
-	height: 80vh;
 	width: 100vw;
 	position: absolute;
 
 	text-align: center;
-	line-height: 80vh;
 	color: white;
+
+	overflow: hidden;
+
+	padding-top: 100px;
 }
+
+	#footer_content {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		margin-bottom: 55vh;
+
+		z-index: 1000;
+	}
+
+	#social_media_logos {
+		display: flex;
+		justify-content: space-around;
+
+		width: 30vw;
+	}
+
+	#social_media_logos img {
+		width: 50px;
+		height: 50px;
+		opacity: 0.7;
+
+		transition: all 0.2s ease;
+	}
+
+		#social_media_logos img:hover {
+			opacity: 1;
+		}
+
+	#big_dubhacks_logo {
+		width: 25vw;
+		margin: 0 2.5vw;
+	}
+
+	#skyline {
+		width: 102vw;
+		bottom: -4vh;
+		left: -2vw;
+
+		position: absolute;
+	}
+
+	#meet_team {
+		width: 30vw;
+	}
+
+		#meet_team h3 {
+			font-family: Nevis;
+			border: 5px white solid;
+			padding: 10px;
+			display: inline-block;
+			font-size: 200%;
+			opacity: 0.7;
+
+			transition: all 0.2s ease;
+		}
+
+		#meet_team h3:hover {
+			cursor: pointer;
+			margin-top: 10px;
+			opacity: 1;
+		}
+
+#contact_footer_bar {
+	display: flex;
+
+	font-family: Nevis;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 98vw;
+	background-color: white;
+	padding: 1vw;
+
+	color: #D72169;
+}
+
+	#contact_footer_bar div:nth-child(2) {
+		margin-left: auto;
+	}
+
+	#contact_footer_bar div:nth-child(1) a {
+		text-decoration: none;
+		color: #D72169; 
+	}
+
+	#contact_footer_bar div:nth-child(1):hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
 
 
 
@@ -361,6 +454,10 @@ input[type=submit] {
 /* MOBILE */
 @media screen and (max-device-width: 640px), (max-width: 640px) {
 
+	#logo_container {
+		padding-bottom: 10vh;
+	}
+
 	#logo_container .plat_logo {
 		width: 90vw;
 		height: 100%;
@@ -380,6 +477,40 @@ input[type=submit] {
 		width: 60vw;
 		height: 100%;
 	}
+
+	#footer_container {
+		display: flex;
+		justify-content: center;
+	}
+
+		#footer_content {
+			flex-direction: column;
+		}
+
+			#social_media_logos {
+				width: 90vw;
+			}
+
+			#big_dubhacks_logo {
+				width: 80vw;
+				margin: 10vh 0;
+			}
+
+			#meet_team h3 {
+				margin: 0;
+			}
+
+		#skyline {
+			width: auto;
+			height: 50vh;
+			margin-left: -400px;
+		}
+
+		#contact_footer_bar {
+			bottom: -1px;
+			width: 94vw;
+			padding: 3vw;
+		}
 }
 
 
