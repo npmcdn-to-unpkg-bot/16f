@@ -95,5 +95,7 @@ var config = {
         text: 'black'
     },
     fontSize: '16px',
+    fontFamily: 'Helvetica',
+    textPadding: '5px',
     cellHeight: '40px'
 }
