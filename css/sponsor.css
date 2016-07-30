@@ -102,13 +102,22 @@ h2 {
 		margin: 0 30px;
 	}
 
+		#navbar_container > li:nth-child(1) {
+			width: 100px;
+		}
+
 		#navbar_container > li:nth-child(5) {
 			margin-left: auto;
 		}
 
 	#navbar_dubhacks_logo {
 		height: 100px;
+		transition: all 0.5s ease;
 	}
+
+		#navbar_dubhacks_logo:hover {
+			transform: scale(1.2,1.2);
+		}
 
 	.navbar_contact_link > a {
 		margin: 0 15px;
@@ -202,6 +211,12 @@ h2 {
 			}
 
 
+
+/*
+/////////////////////
+////// FOOTER ///////
+/////////////////////
+*/
 #footer_container {
 	background: linear-gradient(#F17D69, #EA1B75);
 	width: 100vw;
@@ -285,37 +300,42 @@ h2 {
 			opacity: 1;
 		}
 
-#contact_footer_bar {
-	display: flex;
 
-	font-family: Nevis;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 98vw;
-	background-color: white;
-	padding: 1vw;
+	#contact_footer_bar {
+		display: flex;
 
-	color: #D72169;
-}
+		font-family: Nevis;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 98vw;
+		background-color: white;
+		padding: 1vw;
 
-	#contact_footer_bar div:nth-child(2) {
-		margin-left: auto;
+		color: #D72169;
 	}
 
-	#contact_footer_bar div:nth-child(1) a {
-		text-decoration: none;
-		color: #D72169; 
-	}
+		#contact_footer_bar div:nth-child(2) {
+			margin-left: auto;
+		}
 
-	#contact_footer_bar div:nth-child(1):hover {
-		text-decoration: underline;
-		cursor: pointer;
-	}
+		#contact_footer_bar div:nth-child(1) a {
+			text-decoration: none;
+			color: #D72169; 
+		}
+
+		#contact_footer_bar div:nth-child(1):hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
 
 
 
-/* TABLET */
+/*
+////////////////////
+////// TABLET //////
+////////////////////
+*/
 @media screen and (max-device-width: 1024px), (max-width: 1024px) {
 	.plat_logo {
 		height: 15vh;
@@ -337,7 +357,11 @@ h2 {
 
 
 
-/* MOBILE */
+/*
+////////////////////
+////// MOBILE //////
+////////////////////
+*/
 @media screen and (max-device-width: 640px), (max-width: 640px) {
 
 	#navbar_container {

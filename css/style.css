@@ -48,13 +48,22 @@ html {
 		margin: 0 30px;
 	}
 
+		#navbar_container > li:nth-child(1) {
+			width: 100px;
+		}
+
 		#navbar_container > li:nth-child(5) {
 			margin-left: auto;
 		}
 
 	#navbar_dubhacks_logo {
 		height: 100px;
+		transition: all 0.5s ease;
 	}
+
+		#navbar_dubhacks_logo:hover {
+			transform: scale(1.2,1.2);
+		}
 
 	.navbar_contact_link > a {
 		margin: 0 15px;
@@ -70,6 +79,8 @@ html {
 			.navbar_contact_link > a > img:hover {
 				padding-bottom: 8px;
 			}
+
+
 
 /*
 /////////////////////
