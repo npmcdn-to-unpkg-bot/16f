@@ -23,39 +23,72 @@ body {
 html {
 	background-color: rgb(14,16,27);
 }
-.row {
-	display: table;
-}
 
-.navbar {
-	position: absolute;
-  height: 10vh;
-  padding-top: 5vh !important;
-}
-
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	font-size: 36px;
-	font-family: Nevis;
-	font-weight: bold;
-}
 @font-face {
 	font-family: Nevis;
 	src: url(../fonts/nevis.ttf);
 	font-weight: bold;
 }
 
-li {
-	display: inline;
-	text-align: left;
-	font-size: 30px;
-	font-family: "Nevis";
-	font-weight: bold;
-	color: white;
+
+.row {
+	display: table;
 }
+
+.navbar {
+	position: absolute;
+	height: 10vh;
+	padding-top: 5vh !important;
+}
+
+
+#navbar_container {
+	display: flex;
+
+	position: fixed;
+
+	width: calc(100vw - 40px);
+	height: 100px;
+	line-height: 100px;
+	padding: 40px 20px;
+	margin: 0;
+
+	color: white;
+
+	list-style-type: none;
+}
+
+	#navbar_container li {
+		font-family: Nevis;
+		font-size: 150%;
+
+		margin: 0 30px;
+	}
+
+		#navbar_container > li:nth-child(5) {
+			margin-left: auto;
+		}
+
+	#navbar_dubhacks_logo {
+		height: 100px;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0 15px;
+		margin-bottom: -15px;
+	}
+
+		.navbar_contact_link > a > img {
+			height: 30px;
+
+			transition: padding-bottom 0.2s ease;
+		}
+
+			.navbar_contact_link > a > img:hover {
+				padding-bottom: 5px;
+			}
+
+
 
 #moon {
 	position: absolute;

@@ -264,6 +264,7 @@ input[type=submit] {
 	flex-direction: column;
 
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 	#navbar_placeholder {
@@ -334,6 +335,7 @@ input[type=submit] {
 	overflow: hidden;
 
 	padding-top: 100px;
+
 }
 
 	#footer_content {
