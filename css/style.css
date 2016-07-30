@@ -18,6 +18,11 @@ html {
 }
 
 
+/*
+/////////////////////
+/////// NAVBAR //////
+/////////////////////
+*/
 #navbar_container {
 	display: flex;
 
@@ -63,10 +68,14 @@ html {
 		}
 
 			.navbar_contact_link > a > img:hover {
-				padding-bottom: 5px;
+				padding-bottom: 8px;
 			}
 
-
+/*
+/////////////////////
+/////// HEADER //////
+/////////////////////
+*/
 #header_container {
 	width: 100vw;
 	height: 100vh;
