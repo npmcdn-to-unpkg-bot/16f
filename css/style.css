@@ -112,14 +112,14 @@ html {
 		height: 550px;
 		width: auto;
 		right: 740px;
-		top: 150px;
+		top: calc(45vh - 275px);
 	}
 
 	#big_pink_logo {
-		height: 500px;
+		height: 400px;
 		position: absolute;
 		left: 50px;
-		top: 280px;
+		top: calc(60vh - 200px);
 	}
 
 	#content {
