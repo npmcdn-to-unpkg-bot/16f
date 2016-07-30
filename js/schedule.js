@@ -83,3 +83,17 @@ var schedule = [
         end: new Date(2016, 9, 16, 22, 30)
     }
 ]
+
+/* This is essentially the metadata describing the attributes of the timeline
+** TODO: these are random values.
+*/
+var config = {
+    colors : {
+        time: 'pink',
+        line: 'black',
+        point: 'black',
+        text: 'black'
+    },
+    fontSize: '16px',
+    cellHeight: '40px'
+}
