@@ -107,13 +107,19 @@ var config = {
     colors : {
         time: 'pink',
         line: 'black',
-        point: 'black',
+        circle: 'black',
         text: 'black'
     },
     fontSize: '16px',
     fontFamily: 'Helvetica',
+    circleSize: '5px',
     textPadding: '5px',
-    cellHeight: '40px'
+    cellHeight: '40px',
+    svg: {
+        width: 200,
+        height: 600,
+        margin: 20
+    }
 }
 
 /* This function filters the data and returns an ordered list of events on that date
@@ -151,4 +157,31 @@ function timeToAMPM(d) {
     return hh + ':' + mm + ampm;
 }
 
-console.log(processData(getSortedData(15)));
+function draw(div) {
+    console.log(div);
+    var svg = d3.select(div).append("svg")
+                .attr("width", config.svg.width)
+                .attr("height", config.svg.height)
+            .append("g")
+                .attr("transform", "translate(" + config.svg.margin + "," + config.svg.margin + ")");
+
+    var data = processData(getSortedData(15));
+    
+    var items = svg.selectAll('.items')
+                    .data(data)
+                    .enter();
+
+    var circles = items.append('circle')
+                    .attr('cx', (config.svg.width - 2 * config.svg.margin) / 2)
+                    .attr('cy', function(d, i) { return 50 * i})
+                    .attr('r', config.circleSize)
+                    .style('fill', config.colors.circle);
+    var lines = items.append('line')
+                    .attr('x1', (config.svg.width - 2 * config.svg.margin) / 2)
+                    .attr('x2', (config.svg.width - 2 * config.svg.margin) / 2)
+                    .attr('y1', function(d, i) { return 50 * i })
+                    .attr('y2', function(d, i) { return items.size() - 1 != i ? 50 * (i + 1): 20 * i })
+                    .attr('stroke', config.colors.line);
+}
+
+draw('.day1_svg');
