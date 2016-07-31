@@ -17,13 +17,13 @@ var schedule = [
         end: new Date(2016, 9, 15, 14, 0)
     },
     {
-        id: 2,
+        id: 3,
         name: "Welcome",
         start: new Date(2016, 9, 15, 14, 0),
         end: new Date(2016, 9, 15, 14, 30)
     },
     {
-        id: 3,
+        id: 2,
         name: "Pizza Lunch",
         start: new Date(2016, 9, 15, 11, 0),
         end: new Date(2016, 9, 15, 12, 30)
@@ -157,6 +157,10 @@ function timeToAMPM(d) {
     return hh + ':' + mm + ampm;
 }
 
+/* This function draws the final timeline svg using d3
+** It takes in the div selector to draw the svg in and 
+** the day of which the data should be presented.
+*/
 function draw(div, day) {
     console.log(div);
     var data = processData(getSortedData(day));
