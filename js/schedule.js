@@ -105,18 +105,18 @@ var schedule = [
 */
 var config = {
     colors : {
-        time: 'pink',
-        line: 'black',
-        circle: 'black',
-        text: 'black'
+        time: '#D5256A',
+        line: '#0E1014',
+        circle: '#0E1014',
+        text: '#0E1014'
     },
     fontSize: 14,
-    fontFamily: 'Helvetica',
+    fontFamily: 'nevis',
     circleSize: 3,
-    textPadding: 10,
+    textPadding: 15,
     cellHeight: 50,
     svg: {
-        width: 300,
+        width: 350,
         height: 600,
         margin: 20
     }

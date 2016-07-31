@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Nevis;
+	src: url(../fonts/nevis.ttf);
+}
+
+@font-face {
+	font-family: Typographica;
+	src: url(../fonts/TypoGraphica.otf);
+}
+
 .day {
-    display: inline-flex;
+    align-items: flex-start;
 }
