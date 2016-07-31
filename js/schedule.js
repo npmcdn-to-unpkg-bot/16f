@@ -114,6 +114,7 @@ var config = {
     fontFamily: 'Helvetica',
     circleSize: 3,
     textPadding: 10,
+    cellHeight: 50,
     svg: {
         width: 300,
         height: 600,
@@ -158,13 +159,13 @@ function timeToAMPM(d) {
 
 function draw(div, day) {
     console.log(div);
+    var data = processData(getSortedData(day));
+
     var svg = d3.select(div).append("svg")
                 .attr("width", config.svg.width)
-                .attr("height", config.svg.height)
+                .attr("height", data.length * config.cellHeight)
             .append("g")
                 .attr("transform", "translate(" + config.svg.margin + "," + config.svg.margin + ")");
-
-    var data = processData(getSortedData(day));
     
     var items = svg.selectAll('.items')
                     .data(data)
@@ -172,19 +173,19 @@ function draw(div, day) {
 
     var circles = items.append('circle')
                     .attr('cx', (config.svg.width - 2 * config.svg.margin) / 2)
-                    .attr('cy', function(d, i) { return 50 * i})
+                    .attr('cy', function(d, i) { return config.cellHeight * i})
                     .attr('r', config.circleSize)
                     .style('fill', config.colors.circle);
     var lines = items.append('line')
                     .attr('x1', (config.svg.width - 2 * config.svg.margin) / 2)
                     .attr('x2', (config.svg.width - 2 * config.svg.margin) / 2)
-                    .attr('y1', function(d, i) { return 50 * i })
-                    .attr('y2', function(d, i) { return items.size() - 1 != i ? 50 * (i + 1) : 50 * i })
+                    .attr('y1', function(d, i) { return config.cellHeight * i })
+                    .attr('y2', function(d, i) { return items.size() - 1 != i ? config.cellHeight * (i + 1) : config.cellHeight * i })
                     .attr('stroke', config.colors.line);
 
     var times = items.append('text')
                     .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 - config.textPadding)
-                    .attr('y', function(d, i) { return 50 * i + config.fontSize / 4})
+                    .attr('y', function(d, i) { return config.cellHeight * i + config.fontSize / 4})
                     .attr('font-family', config.fontFamily)
                     .attr('font-size', config.fontSize)
                     .style('text-anchor', 'end')
@@ -193,7 +194,7 @@ function draw(div, day) {
 
     var name = items.append('text')
                     .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 + config.textPadding)
-                    .attr('y', function(d, i) { return 50 * i + config.fontSize / 4})
+                    .attr('y', function(d, i) { return config.cellHeight * i + config.fontSize / 4})
                     .attr('font-family', config.fontFamily)
                     .attr('font-size', config.fontSize)
                     .style('text-anchor', 'start')
