@@ -212,5 +212,5 @@ function draw(div, day) {
         .text(function (d) { return d.text });
 }
 
-draw('.day', 15);
-draw('.day', 16);
+draw('#schedule_content', 15);
+draw('#schedule_content', 16);
