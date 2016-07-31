@@ -149,7 +149,7 @@ function processData(data) {
     });
 }
 
-// Converts a date to time in AM/PM text
+// Converts a Date to time in hh:mm am/pm format
 function timeToAMPM(d) {
     var hh = ((d.getHours() + 11) % 12 + 1);
     var mm = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
@@ -174,37 +174,42 @@ function draw(div, day) {
     var items = svg.selectAll('.items')
                     .data(data)
                     .enter();
+    
+    // Adding the circle Dots
+    items.append('circle')
+        .attr('cx', (config.svg.width - 2 * config.svg.margin) / 2)
+        .attr('cy', function(d, i) { return config.cellHeight * i})
+        .attr('r', config.circleSize)
+        .style('fill', config.colors.circle);
+    
+    // Adding the connecting lines
+    items.append('line')
+        .attr('x1', (config.svg.width - 2 * config.svg.margin) / 2)
+        .attr('x2', (config.svg.width - 2 * config.svg.margin) / 2)
+        .attr('y1', function(d, i) { return config.cellHeight * i })
+        .attr('y2', function(d, i) { return items.size() - 1 != i ? config.cellHeight * (i + 1) : config.cellHeight * i })
+        .attr('stroke', config.colors.line);
 
-    var circles = items.append('circle')
-                    .attr('cx', (config.svg.width - 2 * config.svg.margin) / 2)
-                    .attr('cy', function(d, i) { return config.cellHeight * i})
-                    .attr('r', config.circleSize)
-                    .style('fill', config.colors.circle);
-    var lines = items.append('line')
-                    .attr('x1', (config.svg.width - 2 * config.svg.margin) / 2)
-                    .attr('x2', (config.svg.width - 2 * config.svg.margin) / 2)
-                    .attr('y1', function(d, i) { return config.cellHeight * i })
-                    .attr('y2', function(d, i) { return items.size() - 1 != i ? config.cellHeight * (i + 1) : config.cellHeight * i })
-                    .attr('stroke', config.colors.line);
+    // Adding the times
+    // NOTE: refer to https://bl.ocks.org/mbostock/7555321 for word wrap in case needed
+    items.append('text')
+        .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 - config.textPadding)
+        .attr('y', function(d, i) { return config.cellHeight * i + config.fontSize / 4})
+        .attr('font-family', config.fontFamily)
+        .attr('font-size', config.fontSize)
+        .style('text-anchor', 'end')
+        .style('fill', config.colors.time)
+        .text(function (d) { return d.period });
 
-    var times = items.append('text')
-                    .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 - config.textPadding)
-                    .attr('y', function(d, i) { return config.cellHeight * i + config.fontSize / 4})
-                    .attr('font-family', config.fontFamily)
-                    .attr('font-size', config.fontSize)
-                    .style('text-anchor', 'end')
-                    .style('fill', config.colors.time)
-                    .text(function (d) { return d.period });
-
-    var name = items.append('text')
-                    .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 + config.textPadding)
-                    .attr('y', function(d, i) { return config.cellHeight * i + config.fontSize / 4})
-                    .attr('font-family', config.fontFamily)
-                    .attr('font-size', config.fontSize)
-                    .style('text-anchor', 'start')
-                    .style('fill', config.colors.text)
-                    .text(function (d) { return d.text });
-
+    // Adding the name of the event
+    items.append('text')
+        .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 + config.textPadding)
+        .attr('y', function(d, i) { return config.cellHeight * i + config.fontSize / 4})
+        .attr('font-family', config.fontFamily)
+        .attr('font-size', config.fontSize)
+        .style('text-anchor', 'start')
+        .style('fill', config.colors.text)
+        .text(function (d) { return d.text });
 }
 
 draw('.day', 15);
