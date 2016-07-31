@@ -22,34 +22,45 @@ body {
 	list-style: none;
 	color: white;
 	width: 100vw;
-	height: 60vh;
 	padding-top: 150px;
 	padding-left: 635px;
 	overflow:hidden;
 	letter-spacing: 1px;
 }
+.believe_connect_build {
+	background: white;
+    font-size: 36px;
+    font-family: Nevis;
+    width: 100vw;
+    position: absolute;
+    color: rgb(242,34,117);
+    top: 25%;
+
+}
 .button {
 	padding: 10px;
-border: black 5px solid;
-background-color: white;
-font-size: 40%;
-margin-top: 20px;
-padding-left: 30px;
-padding-right: 30px;
-display: inline-block;
-float: left;
-clear: left;
-z-index: 1000;
-color: black;
-position: absolute;
-align-content: center;
-left: 700px;
+	border: black 3px solid;
+	background-color: white;
+	font-size: 40%;
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	float: left;
+	clear: left;
+	z-index: 1000;
+	color: black;
+	position: absolute;
+	align-content: center;
+	left: 750px;
 }
 .believe {
 	color: rgb(242,34,117);
 	font-size: 75%;
 	padding-top: 100px;
 	letter-spacing: 1px;
+	position:absolute;
+	left:650px;
 }
 /*
 /////////////////////
