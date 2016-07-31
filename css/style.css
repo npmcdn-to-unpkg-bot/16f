@@ -1,21 +1,3 @@
-@media only screen and (min-width : 320px) and (max-width : 768px) {
-
-	.navbar {
-		display: none!important;
-		visibility: hidden!important;
-	}
-
-	#input {
-		max-width: 320px!important;
-		width: 90%!important;
-	}
-
-	.header ul {
-		display: none;
-	}
-
-}
-
 body {
 	margin: 0px;
 	display: flex;
@@ -23,188 +5,210 @@ body {
 html {
 	background-color: rgb(14,16,27);
 }
-.row {
-	display: table;
-}
 
-.navbar {
-	position: absolute;
-  height: 10vh;
-  padding-top: 5vh !important;
-}
-
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	font-size: 36px;
-	font-family: Nevis;
-	font-weight: bold;
-}
 @font-face {
 	font-family: Nevis;
 	src: url(../fonts/nevis.ttf);
 	font-weight: bold;
 }
 
-li {
-	display: inline;
-	text-align: left;
-	font-size: 30px;
-	font-family: "Nevis";
-	font-weight: bold;
-	color: white;
-}
 
-#moon {
-	position: absolute;
-	left:280px;
-	bottom:0px;
-	top: -20px;
-	z-index: 100;
-
-}
-#astronaut {
-	z-index: 1000;
-	position: absolute;
-	left: 340px;
-	top: 180px;
-}
-
-
-.front {
-	z-index: 1000;
-}
-
-.back {
-	position: absolute;
-}
-
-#logo {
-	margin-top: 10vh;
-}
-
-#logo img {
-    max-width: 500px;
-    width: auto;
-		height: 12vh;
-}
-
-.mainlogo {
-	float:left;
+.row {
 	display: table;
-  padding-left: 3vw;
 }
 
-.mainlogo img {
-    height: inherit;
-}
 
-#pink_logo {
-	width: auto;
-	height: 10vh;
-}
+/*
+/////////////////////
+/////// NAVBAR //////
+/////////////////////
+*/
+#navbar_container {
+	display: flex;
 
-.links {
-	padding-right:3vw;
-	top: 0;
-	right: 0;
-}
+	position: fixed;
 
-.links img {
-	margin-right: 14px;
-	margin-left: 14px;
-	width: auto;
-	height: 5vh;
-	line-height: auto;
-}
-.header {
-	font-family: Nevis;
-	position: absolute;
-	top:70px;
-	left: 150px;
-}
-#FAQ {
-	padding: 30px;
-}
-#Sponsors {
-	padding: 30px;
-}
-#Team {
-	padding: 30px;
-}
-#big_pink_logo {
-	height: 500px;
-	position: absolute;
-	left: 50px;
-	top: 280px;
-}
-#small_pink_logo {
-	height: 150px;
-	position: absolute;
-	top: 300px;
-	right: 400px;
+	width: calc(100vw - 40px);
+	height: 100px;
+	line-height: 100px;
+	padding: 40px 20px;
+	margin: 0;
+
+	color: white;
+
+	list-style-type: none;
+
 	z-index: 1000;
 }
-#first_button {
-	z-index: 1000;
-	white-space: nowrap;
+
+	#navbar_container li {
+		font-family: Nevis;
+		font-size: 150%;
+
+		margin: 0 30px;
+	}
+
+		#navbar_container > li:nth-child(1) {
+			width: 100px;
+		}
+
+		#navbar_container > li:nth-child(5) {
+			margin-left: auto;
+		}
+
+	#navbar_dubhacks_logo {
+		height: 100px;
+		transition: all 0.5s ease;
+	}
+
+		#navbar_dubhacks_logo:hover {
+			transform: scale(1.2,1.2);
+		}
+
+	.navbar_contact_link > a {
+		margin: 0 15px;
+		margin-bottom: -15px;
+	}
+
+		.navbar_contact_link > a > img {
+			height: 30px;
+
+			transition: padding-bottom 0.2s ease;
+		}
+
+			.navbar_contact_link > a > img:hover {
+				padding-bottom: 8px;
+			}
+
+
+
+/*
+/////////////////////
+/////// HEADER //////
+/////////////////////
+*/
+#header_container {
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+
+	overflow: hidden;
+
+	position: relative;
 }
-#dates {
-	color: rgb(153,0,76) !important;
-	font-size: 18px !important;
-	border: 2px;
-	border-color: pink;
-	position:absolute !important;
-	left: 1250px;
-	top: 325px;
-	z-index: 100;
+
+	#moon, #astronaut {
+		position: absolute;
+	}
+
+	#moon {
+		height: 1250px;
+		width: auto;
+		right: -300px;
+		top: -180px;
+	}
+
+	#astronaut {
+		height: 550px;
+		width: auto;
+		right: 740px;
+		top: calc(45vh - 275px);
+	}
+
+	#big_pink_logo {
+		height: 400px;
+		position: absolute;
+		left: 50px;
+		top: calc(60vh - 200px);
+	}
+
+	#content {
+		display: flex;
+
+		position: absolute;
+		right: 150px;
+		top: 300px;
+	}
+
+		#small_pink_logo {
+			height: 150px;
+			margin-right: 30px;
+		}
+
+		#box_container {
+			font-family: Nevis;
+			color: #E91774;
+
+			margin-top: 20px;
+		}
+
+			#box_container > div > div:nth-child(1) {
+				font-size: 180%;
+			}
+
+			#box_container > div > div:nth-child(2), #box_container > div > div:nth-child(3) {
+				letter-spacing: 1px;
+				font-size: 150%
+			}
+
+			#box_container > div > div:nth-child(2) {
+				font-size: 100%;
+			}
+
+			.box {
+				padding: 10px;
+				border: #E91774 5px solid;
+				background-color: rgba(250, 250, 250, 0.5);
+			}
+
+			.button {
+				font-size: 220%;
+				margin-top: 20px;
+				padding-left: 30px;
+				padding-right: 30px;
+
+				display: inline-block;
+				float: left;
+				clear: left;
+
+				transition: background-color 0.2s ease;
+			}
+
+				.button:hover {
+					background-color: rgba(250, 250, 250, 1);
+				}
+
+			#box_container > .box:nth-child(2) {
+				margin-top: 50px;
+			}
+
+
+/* TABLET */
+@media screen and (max-device-width: 1024px), (max-width: 1024px) {
+
 }
-#uw {
-	color: rgb(153,0,76) !important;
-font-size: 16px !important;
-position: absolute;
-left: 1250px;
-top: 350px;
-z-index: 100;
+
+
+/* MOBILE */
+@media screen and (max-device-width: 640px), (max-width: 640px) {
+	#navbar_container {
+		padding: 20px;
+	}
+
+	#navbar_container > li:nth-child(1) {
+		margin-left: 0px;
+	}
+
+	.in_page_links {
+		display: none;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0;
+	}
+
+
 }
-#seattle {
-	color: rgb(153,0,76) !important;
-	font-size: 18px !important;
-	position: absolute;
-	left: 1250px;
-	top: 370px;
-	z-index:100;
-}
-#second_button{
-	z-index: 100;
-	white-space:nowrap;
-}
-#register{
-	color: rgb(153,0,76);
-	font-size: 22px;
-	position: absolute;
-	left: 1250px;
-	top: 400px;
-	z-index: 100;
-}
-#third_button {
-	z-index: 100;
-	white-space: nowrap;
-}
-#apply {
-	color: rgb(153,0,76);
-	font-size: 22px;
-	position:absolute;
-	left: 1250px;
-	top: 430px;
-	z-index: 100;
-}
-.first_button {
-	z-index: 1000;
-	white-space: nowrap;
-}
-.second_button {
-	border: 2px solid rgb(153,0,76);
-}
+
+
+

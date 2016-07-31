@@ -1,0 +1,180 @@
+body {
+	margin: 0px;
+	display: flex;
+
+}
+
+@font-face {
+	font-family: Nevis;
+	src: url(../fonts/nevis.ttf);
+	font-weight: bold;
+}
+
+
+.row {
+	display: table;
+}
+.mission_container {
+	background: linear-gradient(45deg, rgb(242,135,103), rgb(242,34,117));
+	position:relative;
+	font-size: 66px;
+	font-family: Nevis;
+	list-style: none;
+	color: white;
+	width: 100vw;
+	padding-top: 150px;
+	padding-left: 635px;
+	overflow:hidden;
+	letter-spacing: 1px;
+}
+.believe_connect_build {
+	background: white;
+    font-size: 40px;
+    font-family: Nevis;
+    width: 100vw;
+    position: absolute;
+    color: rgb(242,34,117);
+    top: 25%;
+		letter-spacing: 2px;
+}
+.button {
+	padding: 10px;
+	border: black 3px solid;
+	background-color: white;
+	font-size: 50%;
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	float: left;
+	clear: left;
+	z-index: 1000;
+	color: black;
+	position: absolute;
+	align-content: center;
+	left: 750px;
+}
+.believe {
+	color: rgb(242,34,117);
+	font-size: 75%;
+	padding-top: 100px;
+	letter-spacing: 1px;
+	position:absolute;
+	left:650px;
+}
+
+#airplane_container {
+	list-style: none;
+	display: flex;
+
+  position: fixed;
+
+	width: calc(100vw - 40px);
+	height: 100px;
+	line-height: 100px;
+	padding-top: 125px;
+	padding-left: 665px;
+}
+#plane_1 {
+	height: 50px;
+	padding-right: 80px;
+}
+#plane_2 {
+	height: 50px;
+	padding-right: 40px;
+}
+#plane_3 {
+	height: 50px;
+}
+.statement {
+	font-style: Nevis;
+	color: black;
+	font-size: 25px;
+	width: 60vw;
+	padding-left: 300px;
+	padding-top: 250px;
+}
+#pink_logo {
+	height:100px;
+	list-style: none;
+	padding-top: 25px;
+	padding-left: 1150px;
+}
+/*
+/////////////////////
+/////// NAVBAR //////
+/////////////////////
+*/
+#navbar_container {
+	display: flex;
+
+  position: fixed;
+
+	width: calc(100vw - 40px);
+	height: 100px;
+	line-height: 100px;
+	padding: 40px 20px;
+	margin: 0;
+	color: white;
+
+ list-style-type: none;
+
+	z-index: 1000;
+}
+
+	#navbar_container li {
+		font-family: Nevis;
+		font-size: 150%;
+		list-style: none;
+		margin: 0 30px;
+	}
+
+		#navbar_container > li:nth-child(5) {
+			margin-left: auto;
+		}
+	#navbar_dubhacks_logo {
+		height: 100px;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0 15px;
+		margin-bottom: -15px;
+	}
+
+		.navbar_contact_link > a > img {
+			height: 30px;
+
+			transition: padding-bottom 0.2s ease;
+		}
+
+			.navbar_contact_link > a > img:hover {
+				padding-bottom: 8px;
+			}
+
+
+/* TABLET */
+@media screen and (max-device-width: 1024px), (max-width: 1024px) {
+
+}
+
+
+/* MOBILE */
+@media screen and (max-device-width: 640px), (max-width: 640px) {
+	#navbar_container {
+		padding: 20px;
+	}
+
+	#navbar_container > li:nth-child(1) {
+		margin-left: 0px;
+	}
+
+	.in_page_links {
+		display: none;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0;
+	}
+
+
+}
