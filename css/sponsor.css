@@ -279,6 +279,34 @@ h2 {
 		position: absolute;
 	}
 
+	#footer_airplane {
+		width: 50px;
+		left: 10px;
+    	bottom: 245px;
+
+		position: absolute;
+
+		transform: rotate(10deg);
+
+		-webkit-animation: fly 15s linear infinite;
+    	animation: fly 15s linear infinite;
+	}
+
+	@keyframes fly {
+	    0%   {
+	    	transform: translate(0px, 0px) rotate(10deg);
+	    }
+	    10%   {
+	    	transform: translate(330px, -170px) rotate(10deg);
+	    }
+	    12.5%   {
+	    	transform: translate(380px, -170px) rotate(-35deg);
+	    }
+	    100% {
+	    	transform: translate(500px, 0px);
+	    }
+	}
+
 	#meet_team {
 		width: 30vw;
 	}
