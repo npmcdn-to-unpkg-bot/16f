@@ -86,6 +86,20 @@ body {
 #plane_3 {
 	height: 50px;
 }
+.statement {
+	font-style: Nevis;
+	color: black;
+	font-size: 25px;
+	width: 60vw;
+	padding-left: 300px;
+	padding-top: 250px;
+}
+#pink_logo {
+	height:100px;
+	list-style: none;
+	padding-top: 25px;
+	padding-left: 1150px;
+}
 /*
 /////////////////////
 /////// NAVBAR //////
