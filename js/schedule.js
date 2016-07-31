@@ -114,10 +114,10 @@ var config = {
     fontFamily: 'nevis',
     circleSize: 3,
     textPadding: 15,
-    cellHeight: 50,
+    cellHeight: 40,
     svg: {
         width: 350,
-        height: 600,
+        height: 320,
         margin: 20
     }
 }
@@ -162,12 +162,12 @@ function timeToAMPM(d) {
 ** the day of which the data should be presented.
 */
 function draw(div, day) {
-    console.log(div);
     var data = processData(getSortedData(day));
+    config.svg.height = Math.max(data.length * config.cellHeight, config.svg.height);
 
     var svg = d3.select(div).append("svg")
                 .attr("width", config.svg.width)
-                .attr("height", data.length * config.cellHeight)
+                .attr("height", config.svg.height)
             .append("g")
                 .attr("transform", "translate(" + config.svg.margin + "," + config.svg.margin + ")");
     
@@ -207,5 +207,5 @@ function draw(div, day) {
 
 }
 
-draw('.day1_svg', 15);
-draw('.day2_svg', 16);
+draw('.day', 15);
+draw('.day', 16);
