@@ -1,0 +1,131 @@
+body {
+	margin: 0px;
+	display: flex;
+
+}
+
+@font-face {
+	font-family: Nevis;
+	src: url(../fonts/nevis.ttf);
+	font-weight: bold;
+}
+
+
+.row {
+	display: table;
+}
+.mission_container {
+	background: linear-gradient(45deg, rgb(242,135,103), rgb(242,34,117));
+	position:relative;
+	font-size: 66px;
+	font-family: Nevis;
+	list-style: none;
+	color: white;
+	width: 100vw;
+	height: 60vh;
+	padding-top: 150px;
+	padding-left: 635px;
+	overflow:hidden;
+	letter-spacing: 1px;
+}
+.button {
+	padding: 10px;
+border: black 5px solid;
+background-color: white;
+font-size: 40%;
+margin-top: 20px;
+padding-left: 30px;
+padding-right: 30px;
+display: inline-block;
+float: left;
+clear: left;
+z-index: 1000;
+color: black;
+position: absolute;
+align-content: center;
+left: 700px;
+}
+.believe {
+	color: rgb(242,34,117);
+	font-size: 75%;
+	padding-top: 100px;
+	letter-spacing: 1px;
+}
+/*
+/////////////////////
+/////// NAVBAR //////
+/////////////////////
+*/
+#navbar_container {
+	display: flex;
+
+  position: fixed;
+
+	width: calc(100vw - 40px);
+	height: 100px;
+	line-height: 100px;
+	padding: 40px 20px;
+	margin: 0;
+	color: white;
+
+ list-style-type: none;
+
+	z-index: 1000;
+}
+
+	#navbar_container li {
+		font-family: Nevis;
+		font-size: 150%;
+
+		margin: 0 30px;
+	}
+
+		#navbar_container > li:nth-child(5) {
+			margin-left: auto;
+		}
+	#navbar_dubhacks_logo {
+		height: 100px;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0 15px;
+		margin-bottom: -15px;
+	}
+
+		.navbar_contact_link > a > img {
+			height: 30px;
+
+			transition: padding-bottom 0.2s ease;
+		}
+
+			.navbar_contact_link > a > img:hover {
+				padding-bottom: 8px;
+			}
+
+
+/* TABLET */
+@media screen and (max-device-width: 1024px), (max-width: 1024px) {
+
+}
+
+
+/* MOBILE */
+@media screen and (max-device-width: 640px), (max-width: 640px) {
+	#navbar_container {
+		padding: 20px;
+	}
+
+	#navbar_container > li:nth-child(1) {
+		margin-left: 0px;
+	}
+
+	.in_page_links {
+		display: none;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0;
+	}
+
+
+}
