@@ -110,13 +110,12 @@ var config = {
         circle: 'black',
         text: 'black'
     },
-    fontSize: '16px',
+    fontSize: 14,
     fontFamily: 'Helvetica',
-    circleSize: '5px',
-    textPadding: '5px',
-    cellHeight: '40px',
+    circleSize: 3,
+    textPadding: 10,
     svg: {
-        width: 200,
+        width: 300,
         height: 600,
         margin: 20
     }
@@ -157,7 +156,7 @@ function timeToAMPM(d) {
     return hh + ':' + mm + ampm;
 }
 
-function draw(div) {
+function draw(div, day) {
     console.log(div);
     var svg = d3.select(div).append("svg")
                 .attr("width", config.svg.width)
@@ -165,7 +164,7 @@ function draw(div) {
             .append("g")
                 .attr("transform", "translate(" + config.svg.margin + "," + config.svg.margin + ")");
 
-    var data = processData(getSortedData(15));
+    var data = processData(getSortedData(day));
     
     var items = svg.selectAll('.items')
                     .data(data)
@@ -180,8 +179,28 @@ function draw(div) {
                     .attr('x1', (config.svg.width - 2 * config.svg.margin) / 2)
                     .attr('x2', (config.svg.width - 2 * config.svg.margin) / 2)
                     .attr('y1', function(d, i) { return 50 * i })
-                    .attr('y2', function(d, i) { return items.size() - 1 != i ? 50 * (i + 1): 20 * i })
+                    .attr('y2', function(d, i) { return items.size() - 1 != i ? 50 * (i + 1) : 50 * i })
                     .attr('stroke', config.colors.line);
+
+    var times = items.append('text')
+                    .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 - config.textPadding)
+                    .attr('y', function(d, i) { return 50 * i + config.fontSize / 4})
+                    .attr('font-family', config.fontFamily)
+                    .attr('font-size', config.fontSize)
+                    .style('text-anchor', 'end')
+                    .style('fill', config.colors.time)
+                    .text(function (d) { return d.period });
+
+    var name = items.append('text')
+                    .attr('x', (config.svg.width - 2 * config.svg.margin) / 2 + config.textPadding)
+                    .attr('y', function(d, i) { return 50 * i + config.fontSize / 4})
+                    .attr('font-family', config.fontFamily)
+                    .attr('font-size', config.fontSize)
+                    .style('text-anchor', 'start')
+                    .style('fill', config.colors.text)
+                    .text(function (d) { return d.text });
+
 }
 
-draw('.day1_svg');
+draw('.day1_svg', 15);
+draw('.day2_svg', 16);
