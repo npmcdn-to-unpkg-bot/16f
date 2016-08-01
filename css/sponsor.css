@@ -96,6 +96,32 @@ h2 {
 		margin: 0 30px;
 	}
 
+		#navbar_container > li > a {
+			text-decoration: none;
+			color: white;
+			position: relative;
+		}
+
+			#navbar_container > li > a:before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 4px;
+				bottom: -4px;
+				left: 0;
+				background-color: white;
+				visibility: hidden;
+				-webkit-transition: all 0.3s ease-in-out 0s;
+				transition: all 0.3s ease-in-out 0s;
+
+				width: 0;
+			}
+
+				#navbar_container > li > a:hover:before {
+					visibility: visible;
+					width: 100%;
+				}
+
 		#navbar_container > li:nth-child(1) {
 			width: 80px;
 		}
@@ -371,7 +397,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 
-	padding-top: 150px;
+	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
