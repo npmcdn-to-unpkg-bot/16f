@@ -52,7 +52,10 @@ body {
 h1 {
 	font-family: Typographica;
 	font-size: 3.5em;
-	color: black;
+	color: white;
+	opacity: 0.7;
+	font-family: Nevis;
+	text-align: center;
 }
 
 h2 {
@@ -249,14 +252,6 @@ h2 {
 		position: relative;
 	}
 
-		#our_mission h1 {
-			color: white;
-			font-size: 66px;
-			font-family: Nevis;
-			letter-spacing: 1px;
-			z-index: 2;
-		}
-
 	#big_astronaut_placeholder {
 		width: 50vw;
 		height: 45vw;
@@ -351,14 +346,6 @@ h2 {
 	padding-top: 100px;
 }
 
-	#schedule_container h1 {
-		color: white;
-		text-align: center;
-		opacity: 0.7;
-
-		font-family: Nevis;
-	}
-
 	#schedule_container .empty_box {
 		height: 400px;
 	}
@@ -395,14 +382,6 @@ h2 {
 		text-align: center;
 		line-height: 10vh;
 		color: white;
-	}
-
-	#sponsor_container h1 {
-		color: white;
-		text-align: center;
-		opacity: 0.7;
-
-		font-family: Nevis;
 	}
 
 	#logo_container {
