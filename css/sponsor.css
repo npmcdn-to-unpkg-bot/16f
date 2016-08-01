@@ -96,13 +96,13 @@ h2 {
 		margin: 0 30px;
 	}
 
-		#navbar_container > li > a {
+		#navbar_container > .in_page_links > a {
 			text-decoration: none;
 			color: white;
 			position: relative;
 		}
 
-			#navbar_container > li > a:before {
+			#navbar_container > .in_page_links > a:before {
 				content: "";
 				position: absolute;
 				width: 100%;
@@ -117,7 +117,7 @@ h2 {
 				width: 0;
 			}
 
-				#navbar_container > li > a:hover:before {
+				#navbar_container > .in_page_links > a:hover:before {
 					visibility: visible;
 					width: 100%;
 				}
@@ -152,7 +152,7 @@ h2 {
 		}
 
 			.navbar_contact_link > a > img:hover {
-				padding-bottom: 5px;
+				padding-bottom: 8px;
 			}
 
 
@@ -604,6 +604,13 @@ h2 {
 ////////////////////
 */
 @media screen and (max-device-width: 1024px), (max-width: 1024px) {
+	
+	/* HEADER */
+	#big_pink_logo {
+		display: none;
+	}
+
+	/* SPONSOR */
 	.plat_logo {
 		height: 15vh;
 	}
