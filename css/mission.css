@@ -61,7 +61,11 @@ body {
 				padding-bottom: 8px;
 			}
 
-
+/*
+/////////////////////
+////// MISSION //////
+/////////////////////
+*/
 #mission_container {
 	background: linear-gradient( to top left, #EA1B75, #F17D69);
 	color: white;
@@ -80,6 +84,7 @@ body {
 	}
 
 		#our_mission h1 {
+			color: white;
 			font-size: 66px;
 			font-family: Nevis;
 			letter-spacing: 1px;
@@ -96,78 +101,73 @@ body {
 		margin-top: -180px;
 	}
 
-.believe_connect_build {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	width: 56vw;
-	background: white;
-    font-family: Nevis;
-    color: rgb(242,34,117);
-	letter-spacing: 1px;
-
-	padding: 50px 22vw;
-
-	position: relative;
-	overflow: hidden;
-}
-
-	.believe_connect_build div, .believe_connect_build ul {
+	.believe_connect_build {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
-	}
 
-
-	#our_mission_title {
-		padding: 10px 15px;
-		border: black 3px solid;
-		background-color: white;
-		font-size: 150%;
-		margin: auto;
-		color: black;
-
-		text-align: center;
-	}
-	#believe {
-		color: rgb(242,34,117);
-		font-size: 40px;
-		padding-top: 50px;
+		width: 56vw;
+		background: white;
+	    font-family: Nevis;
+	    color: rgb(242,34,117);
 		letter-spacing: 1px;
-		text-align: center;
+
+		padding: 50px 22vw;
+
+		position: relative;
+		overflow: hidden;
 	}
 
-	#airplane_container {
-		list-style: none;
-	    display: flex;
-	    padding: 0;
-	    justify-content: center;
-	}
-
-		#airplane_container li img {
-			height: 50px;
-			padding: 0 40px;
+		.believe_connect_build div, .believe_connect_build ul {
+			display: flex;
+			justify-content: center;
 		}
 
-	#statement {
-		font-style: Nevis;
-		color: black;
-		font-size: 25px;
-		margin-top: 40px;
-	}
-	#pink_logo {
-		height:100px;
-		width: 100px;
-		margin-top: 50px;
-		right: 25vw;
-	    position: absolute;
-	}
+		#our_mission_title {
+			padding: 10px 15px;
+			border: black 3px solid;
+			background-color: white;
+			font-size: 150%;
+			margin: auto;
+			color: black;
 
-#test {
-	width: 100vw;
-	height: 300px;
-	background-color: blue;
-}
+			text-align: center;
+		}
+
+		#believe {
+			color: rgb(242,34,117);
+			font-size: 40px;
+			padding-top: 50px;
+			letter-spacing: 1px;
+			text-align: center;
+		}
+
+		#airplane_container {
+			list-style: none;
+		    display: flex;
+		    padding: 0;
+		    justify-content: center;
+		}
+
+			#airplane_container li img {
+				height: 50px;
+				padding: 0 40px;
+			}
+
+		#statement {
+			font-style: Nevis;
+			color: black;
+			font-size: 25px;
+			margin-top: 40px;
+		}
+
+		#pink_logo {
+			height:100px;
+			width: 100px;
+			margin-top: 50px;
+			right: 25vw;
+		    position: absolute;
+		}
 
 
 
