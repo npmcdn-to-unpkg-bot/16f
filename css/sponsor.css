@@ -175,50 +175,18 @@ h2 {
 				padding-bottom: 8px;
 			}
 
-/* Start */
-
 #color_band {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;
+	height: 7px;
 	/*opacity: 0;*/
 
 	transition: opacity 0.2s ease;
+
+	background: linear-gradient(90deg, #F8CA23 0%, #F8CA23 16.66%, #E68060 16.66%, #E68060 33.32%, #79C5B6 33.32%, #79C5B6 50%, #525E9B 50%, #525E9B 66.64%, #D72169 66.64%, #D72169 83.3%, #983D78 83.3%, #983D78 100%);
 }
-
-	#color_band > div {
-		float: left;
-		width: 16.66666666vw;
-		height: 7px;
-		background-color: green;
-	}
-
-	#color_band > div:nth-child(1) {
-		background-color: #F8CA23;
-	}
-
-	#color_band > div:nth-child(2) {
-		background-color: #E68060;
-	}
-
-	#color_band > div:nth-child(3) {
-		background-color: #79C5B6;
-	}
-
-	#color_band > div:nth-child(4) {
-		background-color: #525E9B;
-	}
-
-	#color_band > div:nth-child(5) {
-		background-color: #D72169;
-	}
-
-	#color_band > div:nth-child(6) {
-		background-color: #983D78;
-	}
-
-/* End */
 
 
 
@@ -316,6 +284,7 @@ h2 {
 
 				.button:hover {
 					background-color: rgba(250, 250, 250, 1);
+					cursor: pointer;
 				}
 
 			#box_container > .box:nth-child(2) {
