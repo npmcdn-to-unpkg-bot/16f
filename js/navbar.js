@@ -5,6 +5,7 @@ var $before_link = $("#navbar_container > .in_page_links > a:before");
 var $links = $("#navbar_container > .in_page_links > a");
 var $color_band = $("#color_band");
 var $logo = $("#navbar_dubhacks_logo");
+var $header_container = $("#header_container");
 
 var $fb = $("#fb > a > img");
 var $twitter = $("#twitter > a > img");
@@ -28,7 +29,7 @@ $navbar_container.hover(function(){
 	$logo.attr("src", "images/dubhacks_logo_white.svg");
 	// $color_band.css("opacity", "0");
 
-	if ($(document).scrollTop() > (screen.height * 0.9)) {
+	if ($(document).scrollTop() > $header_container.outerHeight()) {
 		colorLogosWhite();
 	}
 });
@@ -38,7 +39,7 @@ $navbar_container.hover(function(){
 $(document).scroll(function() {
     console.log($(document).scrollTop());
 
-    if ($(document).scrollTop() > (screen.height * 0.9)) {
+    if ($(document).scrollTop() > $header_container.outerHeight()) {
 		colorLogosWhite();
 	} else {
 		colorLogosPink();
