@@ -42,16 +42,12 @@ $navbar_container.hover(function(){
 	}
 });
 
-// Changes color of social media links after it scrolls past 
+// Changes color of social media links after it scrolls past
 // header seaction.
 $(document).scroll(function() {
-    console.log($(document).scrollTop());
-
-    if (!isHoveringOver && $(document).scrollTop() > $header_container.outerHeight()) {
-		console.log("coloring white");
+  if (!isHoveringOver && $(document).scrollTop() > $header_container.outerHeight()) {
 		colorLogosWhite();
 	} else {
-		console.log("coloring pink");
 		colorLogosPink();
 	}
 });
@@ -69,7 +65,3 @@ function colorLogosWhite () {
 	$twitter.attr("src", "images/twitter_white.png");
 	$mail.attr("src", "images/email_white.png");
 }
-
-
-
-
