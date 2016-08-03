@@ -746,6 +746,20 @@ h2 {
 	.bronze_logo {
 		height: 4vh;
 	}
+
+			.faq_column {
+			-webkit-column-count: 1; /* Chrome, Safari, Opera */
+			-moz-column-count: 1; /* Firefox */
+			column-count: 1;
+		}
+
+		.faq_column div h2 {
+			font-size: 180%;
+		}
+
+		.faq_column div p {
+			font-size: 120%;
+		}
 }
 
 
@@ -830,6 +844,20 @@ h2 {
 			bottom: -1px;
 			width: 94vw;
 			padding: 3vw;
+		}
+
+		.faq_column {
+			-webkit-column-count: 1; /* Chrome, Safari, Opera */
+			-moz-column-count: 1; /* Firefox */
+			column-count: 1;
+		}
+
+		.faq_column div h2 {
+			font-size: 180%;
+		}
+
+		.faq_column div p {
+			font-size: 120%;
 		}
 }
 
