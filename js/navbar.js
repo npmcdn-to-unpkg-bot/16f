@@ -11,18 +11,26 @@ var $fb = $("#fb > a > img");
 var $twitter = $("#twitter > a > img");
 var $mail = $("#mail > a > img");
 
+var isHoveringOver = false;
+
 
 // Makes navbar background appear and changes color of links.
 $navbar_container.hover(function(){
+	isHoveringOver = true;
+
 	$links.css("color", "#2F2F2F");
 	$before_link.css("background-color", "#2F2F2F");
 	// $color_band.css("opacity", "1");
 
 	$logo.attr("src", "images/final_logo.png");
 
+
 	colorLogosPink();
 
+
 }, function(){
+	isHoveringOver = false;
+
 	$links.css("color", "white");
 	$before_link.css("background-color", "white");
 
@@ -39,9 +47,11 @@ $navbar_container.hover(function(){
 $(document).scroll(function() {
     console.log($(document).scrollTop());
 
-    if ($(document).scrollTop() > $header_container.outerHeight()) {
+    if (!isHoveringOver && $(document).scrollTop() > $header_container.outerHeight()) {
+		console.log("coloring white");
 		colorLogosWhite();
 	} else {
+		console.log("coloring pink");
 		colorLogosPink();
 	}
 });
