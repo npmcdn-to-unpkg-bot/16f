@@ -10,7 +10,7 @@ var $header_container = $("#header_container");
 var $fb = $("#fb > a > img");
 var $twitter = $("#twitter > a > img");
 var $mail = $("#mail > a > img");
-
+var mobileScrollBack = false;
 var isHoveringOver = false;
 
 
@@ -45,7 +45,14 @@ $navbar_container.hover(function(){
 // Changes color of social media links after it scrolls past
 // header seaction.
 $(document).scroll(function() {
-  if (!isHoveringOver && $(document).scrollTop() > $header_container.outerHeight()) {
+	var size = $(window).width();
+	if (size < 768) {
+		if (!$(document).scrollTop() > $header_container.offset().top) {
+			$navbar_container.css("display", "flex");
+		} else {
+			$navbar_container.css("display", "none");
+		}
+	} else if (!isHoveringOver && $(document).scrollTop() > $header_container.outerHeight()) {
 		colorLogosWhite();
 	} else {
 		colorLogosPink();
