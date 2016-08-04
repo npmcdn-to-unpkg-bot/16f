@@ -342,7 +342,7 @@ a {
 	color: rgb(242,34,117);
 	letter-spacing: 1px;
 
-	padding: 50px 22vw;
+	padding: 20px 22vw 50px;
 
 	position: relative;
 	overflow: hidden;
@@ -355,9 +355,9 @@ a {
 
 #our_mission_title {
 	padding: 10px 15px;
-	border: black 3px solid;
+	border: black 5px solid;
 	background-color: white;
-	font-size: 150%;
+	font-size: 250%;
 	margin: auto;
 	color: black;
 
@@ -401,11 +401,11 @@ a {
 
 /*
 /////////////////////
-////// SCHEDULE /////
+//////// FAQ ////////
 /////////////////////
 */
 #faq_container {
-	background: linear-gradient( to left top, #4D62A5, #56C1B2);
+	background: linear-gradient( to left top, #5468B0, #A6468A);
 
 	width: 100vw;
 
@@ -441,7 +441,7 @@ a {
 	font-family: Nevis;
 	letter-spacing: 1px;
 
-	padding: 50px 8vw;
+	padding: 20px 12vw;
 
 	position: relative;
 	overflow: hidden;
@@ -464,26 +464,31 @@ a {
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	-moz-column-count: 2; /* Firefox */
 	column-count: 2;
-	-webkit-column-gap: 5vw; /* Chrome, Safari, Opera */
-	-moz-column-gap: 5vw; /* Firefox */
-	column-gap: 5vw;
+	-webkit-column-gap: 7vw; /* Chrome, Safari, Opera */
+	-moz-column-gap: 7vw; /* Firefox */
+	column-gap: 7vw;
 }
 
 .faq_column div {
 	-webkit-break-inside: avoid-column;
 	-moz-break-inside: avoid-column;
 	break-inside: avoid-column;
+	display: inline-block;
+	width: 100%
 }
 
 .faq_column div h2 {
 	margin: 0;
 	font-family: 'Nevis';
+	font-size: 2.0em;
 }
 
 .faq_column div p {
 	color: #444;
 	font-family: 'Roboto', sans-serif;
-	font-size: 150%;
+	font-size: 125%;
+	margin-top: 10px;
+	margin-bottom: 40px;
 
 }
 
