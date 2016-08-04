@@ -901,7 +901,7 @@ a {
 	#small_pink_logo {
 		height: 80px;
 		margin: 20px 30px;
-		display: none;		
+		display: none;
 	}
 
 	#big_pink_logo {
@@ -928,5 +928,13 @@ a {
 
 	.button {
 		font-size: 190%;
+	}
+
+	.button:hover {
+		background-color: #E91774;
+	}
+
+	.button:hover a {
+		color: #FFF!important;
 	}
 }
