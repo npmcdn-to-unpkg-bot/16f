@@ -13,7 +13,11 @@
 		<script src="https://use.fontawesome.com/09a02fca2b.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="icon" href="images/final_logo.png">
-
+		<script>
+			function scrollTo(headerName) {
+				 $('html, body').animate({scrollTop:$(headerName).position().top}, 300);
+			}
+		</script>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 
 		<title>DubHacks 2016</title>
@@ -24,13 +28,10 @@
 
 
 			<div id="color_band"></div>
-			<li><img id="navbar_dubhacks_logo" src="images/dubhacks_logo_white.svg"></li>
-
-
-
+			<li><a onclick="scrollTo('#header_container')"><img id="navbar_dubhacks_logo" src="images/dubhacks_logo_white.svg"></a></li>
 			<!-- <li><img id="navbar_dubhacks_logo" src="images/dubhacks_logo_white.svg"></li> -->
-			<li class="in_page_links"><a href="#faq_container">FAQ</a></li>
-			<li class="in_page_links"><a href="#sponsor_container">Sponsors</a></li>
+			<li class="in_page_links"><a onclick="scrollTo('#faq_container')">FAQ</a></li>
+			<li class="in_page_links"><a onclick="scrollTo('#sponsor_container')">Sponsors</a></li>
 			<li class="in_page_links"><a href="#">Team</a></li>
 			<li class="navbar_contact_link" id="fb">
 				<a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><img src="images/facebook_pink.png"></a>
