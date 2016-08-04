@@ -507,17 +507,97 @@ a {
 	padding-top: 100px;
 }
 
-#schedule_container .empty_box {
-	height: 400px;
-}
+	#schd_flat_section {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 
-#schedule_content {
-	padding: 50px 0;
-	background-color: #fff;
+		position: relative;
+	}
 
-	display: flex;
-	justify-content: center;
-}
+		#schd_flat_placeholder {
+			width: 50vw;
+			height: 45vw;
+			line-height: 45vw;
+			background-color: rgba(0, 0, 0, 0.2);
+			margin-left: 25vw;
+			margin-right: 25vw;
+			margin-top: -180px;
+		}
+
+		#schd-section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background: white;
+			font-family: Nevis;
+			letter-spacing: 1px;
+
+			padding: 50px 8vw;
+
+			position: relative;
+			overflow: hidden;
+		}
+
+			.schd_column {
+				/*width: 50%;*/
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				-webkit-column-gap: 5vw; /* Chrome, Safari, Opera */
+				-moz-column-gap: 5vw; /* Firefox */
+				column-gap: 5vw;
+			}
+
+			.schd_column div {
+				-webkit-break-inside: avoid-column;
+				-moz-break-inside: avoid-column;
+				break-inside: avoid-column;
+			}
+
+			.schd_column div h2 {
+				margin: 0;
+			}
+
+			.schd_column div p {
+				color: #444;
+				font-size: 150%;
+
+			}
+
+
+	#schedule_content {
+		padding: 50px 0;
+		background-color: #fff;
+
+		display: flex;
+		justify-content: center;
+	}
+
+	.day_title {
+		padding: 10px 15px;
+		border: black 5px solid;
+		background-color: white;
+		font-size: 150%;
+		margin: auto;
+		color: black;
+		text-align: center;
+		width: 50%;
+	}
+
+	.day_subtitle {
+		margin: 10px auto;
+		color: black;
+		text-align: center;
+	}
+
+	#day1_context {
+		text-align: center;
+	}
+
+	#day2_context {
+		text-align: center;
+	}
 
 /*
 /////////////////////
@@ -780,6 +860,20 @@ a {
 	.faq_column div p {
 		font-size: 120%;
 	}
+
+	.schd_column {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+	}
+
+	.schd_column div h2 {
+		font-size: 180%;
+	}
+
+	.schd_column div p {
+		font-size: 120%;
+	}
 }
 
 
@@ -881,6 +975,20 @@ a {
 	}
 
 	.faq_column div p {
+		font-size: 120%;
+	}
+
+	.schd_column {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+	}
+
+	.schd_column div h2 {
+		font-size: 180%;
+	}
+
+	.schd_column div p {
 		font-size: 120%;
 	}
 

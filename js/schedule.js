@@ -13,90 +13,84 @@ var schedule = [
     {
         id: 1,
         name: "Registration",
-        start: new Date(2016, 9, 15, 11, 0),
-        end: new Date(2016, 9, 15, 14, 0)
-    },
-    {
-        id: 3,
-        name: "Welcome",
-        start: new Date(2016, 9, 15, 14, 0),
-        end: new Date(2016, 9, 15, 14, 30)
+        start: new Date(2016, 9, 15, 16, 0),
+        end: new Date(2016, 9, 15, 17, 0)
     },
     {
         id: 2,
-        name: "Pizza Lunch",
-        start: new Date(2016, 9, 15, 11, 0),
-        end: new Date(2016, 9, 15, 12, 30)
+        name: "Welcome",
+        start: new Date(2016, 9, 15, 17, 0),
+        end: new Date(2016, 9, 15, 18, 0)
+    },
+    {
+        id: 3,
+        name: "Dinner",
+        start: new Date(2016, 9, 15, 18, 30),
+        end: new Date(2016, 9, 15, 19, 30)
     },
     {
         id: 4,
-        name: "Team Formation",
-        start: new Date(2016, 9, 15, 14, 30),
-        end: new Date(2016, 9, 15, 15, 0)
+        name: "Start Hacking!",
+        start: new Date(2016, 9, 15, 19, 0),
     },
     {
         id: 5,
-        name: "Start Hacking!",
-        start: new Date(2016, 9, 15, 15, 0),
+        name: "Workshops",
+        start: new Date(2016, 9, 15, 19, 30),
+        end: new Date(2016, 9, 15, 23, 30)
     },
     {
         id: 6,
-        name: "Dinner",
-        start: new Date(2016, 9, 15, 18, 0),
-        end: new Date(2016, 9, 16, 19, 0)
-    },
-    {
-        id: 7,
-        name: "Workshops",
-        start: new Date(2016, 9, 15, 17, 0),
-        end: new Date(2016, 9, 16, 22, 30)
-    },
-    {
-        id: 8,
         name: "Activites",
         start: new Date(2016, 9, 15, 22, 30),
-        end: new Date(2016, 9, 16, 0, 0)
-    },
-    {
-        id: 9,
-        name: "Food Truck",
-        start: new Date(2016, 9, 16, 0, 0),
         end: new Date(2016, 9, 16, 0, 30)
     },
     {
-        id: 10,
+        id: 7,
+        name: "Snack",
+        start: new Date(2016, 9, 16, 0, 30),
+        end: new Date(2016, 9, 16, 2, 30)
+    },
+    {
+        id: 8,
         name: "Breakfast",
         start: new Date(2016, 9, 16, 7, 0),
         end: new Date(2016, 9, 16, 8, 30)
     },
     {
-        id: 11,
+        id: 9,
         name: "Activites",
         start: new Date(2016, 9, 16, 9, 0),
         end: new Date(2016, 9, 16, 10, 30)
     },
     {
-        id: 12,
+        id: 10,
         name: "Lunch",
         start: new Date(2016, 9, 16, 11, 30),
         end: new Date(2016, 9, 16, 12, 30)
     },
     {
-        id: 13,
+        id: 11,
         name: "Submit Projects",
-        end: new Date(2016, 9, 16, 14, 0)
+        end: new Date(2016, 9, 16, 16, 0)
+    },
+    {
+        id: 12,
+        name: "Judging",
+        start: new Date(2016, 9, 16, 16, 30),
+        end: new Date(2016, 9, 16, 17, 30)
+    },
+    {
+        id: 13,
+        name: "Dinner",
+        start: new Date(2016, 9, 16, 17, 0),
+        end: new Date(2016, 9, 16, 18, 0)
     },
     {
         id: 14,
-        name: "Sponsor Judging",
-        start: new Date(2016, 9, 16, 14, 15),
-        end: new Date(2016, 9, 16, 15, 45)
-    },
-    {
-        id: 15,
-        name: "Presentations + Prizes",
-        start: new Date(2016, 9, 16, 17, 0),
-        end: new Date(2016, 9, 16, 22, 30)
+        name: "Final Judging + Closing",
+        start: new Date(2016, 9, 16, 18, 0),
+        end: new Date(2016, 9, 16, 19, 30)
     }
 ]
 
@@ -212,5 +206,5 @@ function draw(div, day) {
         .text(function (d) { return d.text });
 }
 
-draw('#schedule_content', 15);
-draw('#schedule_content', 16);
+draw('#day1_context', 15);
+draw('#day2_context', 16);
