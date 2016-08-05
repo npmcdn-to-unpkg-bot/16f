@@ -11,6 +11,10 @@
 	  <meta property="description" content="Join us at the University of Washington to build the next generation of innovative software and hardware hacks." />
 		<link href='https://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
 		<script src="https://use.fontawesome.com/09a02fca2b.js"></script>
+
+		<link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
+		<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="icon" href="images/final_logo.png">
 		<script>
@@ -43,11 +47,35 @@
 				<a href="mailto:info@dubhacks.co"><img src="images/email_pink.png"></a>
 			</li>
 		</ul>
-
 		<div id="header_container">
-			<img id="moon" src="images/MOON_PNG.png">
-			<img id="astronaut" src="images/Astronaut_PNG.png">
-			<img id="big_pink_logo" src="images/final_logo.png">
+			<div>
+				<div class="carousel" data-flickity='{ "cellAlign": "left", "contain": false, "freeScroll": true, "autoPlay": 5000, "wrapAround": true, "lazyLoad": true, "pageDots": false, "selectedAttraction": 0.01, "friction": 0.15}'>
+					<div class="carousel-cell panel-1">
+						<img data-flickity-lazyload="images/placeholders/darkblue.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-2">
+						<img data-flickity-lazyload="images/placeholders/orange.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-3">
+						<img data-flickity-lazyload="images/placeholders/pink.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-4">
+						<img data-flickity-lazyload="images/placeholders/purple.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-5">
+						<img data-flickity-lazyload="images/placeholders/teal.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-6">
+						<img data-flickity-lazyload="images/placeholders/yellow.jpg" alt="">
+					</div>
+					<!--<img src="images/placeholders/darkblue.jpg" alt="">
+					<img src="images/placeholders/orange.jpg" alt="">
+					<img src="images/placeholders/pink.jpg" alt="">
+					<img src="images/placeholders/purple.jpg" alt="">
+					<img src="images/placeholders/teal.jpg" alt="">
+					<img src="images/placeholders/yellow.jpg" alt="">-->
+				</div>
+			</div>
 			<div id="content">
 				<img id="small_pink_logo" src="images/final_logo.png">
 				<div id="box_container">
