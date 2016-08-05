@@ -15,6 +15,12 @@
 		<link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
 		<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
+		<link rel="stylesheet" type="text/css" href="css/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
+		<script type="text/javascript" src="css/slick/slick.min.js"></script>
+
+		
+
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="icon" href="images/final_logo.png">
 		<script>
@@ -49,7 +55,29 @@
 		</ul>
 		<div id="header_container">
 			<div>
-				<div class="carousel" data-flickity='{ "cellAlign": "left", "contain": false, "freeScroll": true, "autoPlay": 5000, "wrapAround": true, "lazyLoad": true, "pageDots": false, "selectedAttraction": 0.01, "friction": 0.15}'>
+
+				<section class="carousel">
+					<div class="carousel-cell panel-1">
+						<img src="images/placeholders/darkblue.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-2">
+						<img src="images/placeholders/orange.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-3">
+						<img src="images/placeholders/pink.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-4">
+						<img src="images/placeholders/purple.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-5">
+						<img src="images/placeholders/teal.jpg" alt="">
+					</div>
+					<div class="carousel-cell panel-6">
+						<img src="images/placeholders/yellow.jpg" alt="">
+					</div>
+				</section>
+
+				<!--<div class="carousel" data-flickity='{ "cellAlign": "left", "contain": false, "freeScroll": true, "autoPlay": 5000, "wrapAround": true, "lazyLoad": true, "pageDots": false, "selectedAttraction": 0.01, "friction": 0.15}'>
 					<div class="carousel-cell panel-1">
 						<img data-flickity-lazyload="images/placeholders/darkblue.jpg" alt="">
 					</div>
@@ -68,13 +96,13 @@
 					<div class="carousel-cell panel-6">
 						<img data-flickity-lazyload="images/placeholders/yellow.jpg" alt="">
 					</div>
-					<!--<img src="images/placeholders/darkblue.jpg" alt="">
+					<img src="images/placeholders/darkblue.jpg" alt="">
 					<img src="images/placeholders/orange.jpg" alt="">
 					<img src="images/placeholders/pink.jpg" alt="">
 					<img src="images/placeholders/purple.jpg" alt="">
 					<img src="images/placeholders/teal.jpg" alt="">
-					<img src="images/placeholders/yellow.jpg" alt="">-->
-				</div>
+					<img src="images/placeholders/yellow.jpg" alt="">
+				</div>-->
 			</div>
 			<div id="content">
 				<img id="small_pink_logo" src="images/final_logo.png">
@@ -292,4 +320,17 @@
 	</body>
 	<script src="js/schedule.js"></script>
 	<script src="js/navbar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.carousel').slick({
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				speed: 5000,
+				pauseOnHover: false,
+				pauseOnDotsHover: true
+			});
+		});
+	</script>
 </html>
