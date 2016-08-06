@@ -16,6 +16,8 @@ html {
 
 }
 
+html,body{overflow-x: hidden;}
+
 body {
 	margin: 0px;
 
@@ -31,12 +33,23 @@ body {
 	margin-right: 0;
 	background: #8C8;
 	counter-increment: gallery-cell;
+	text-align: center;	
 }
 
 .carousel-cell img {
-	margin-top: 20vh;
 	background: #8C8;
 	width: 100vw;
+	height: 100vw;
+	max-width:100%;
+	max-height:100%;
+}
+
+.carousel-cell h2 {
+	position: absolute;
+	top: 20vh;
+	padding-left: calc(50vw - 275px);
+	color: white;
+	font-family: Nevis;
 }
 
 .carousel {
@@ -46,16 +59,16 @@ body {
 }
 
 /* cell number */
-.carousel-cell:before {
+/*.carousel-cell:before {
 	display: block;
 	text-align: center;
-	/*content: counter(gallery-cell);*/
+	content: counter(gallery-cell);
 	line-height: 200px;
 	font-size: 80px;
 	color: white;
-}
+}*/
 
-/*.panel-1 {background-image: url("../images/placeholders/darkblue.jpg");}
+/*.panel-1 {background-image: url("../images/placeholders/environment.jpg");}
 .panel-2 {background-image: url("../images/placeholders/orange.jpg");}
 .panel-3 {background-image: url("../images/placeholders/pink.jpg");}
 .panel-4 {background-image: url("../images/placeholders/purple.jpg");}
