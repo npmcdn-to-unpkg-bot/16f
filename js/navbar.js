@@ -22,7 +22,7 @@ $navbar_container.hover(function(){
 	$before_link.css("background-color", "#2F2F2F");
 	// $color_band.css("opacity", "1");
 
-	$logo.attr("src", "images/final_logo.png");
+	$logo.attr("src", "/images/final_logo.png");
 
 
 	colorLogosPink();
@@ -34,7 +34,7 @@ $navbar_container.hover(function(){
 	$links.css("color", "white");
 	$before_link.css("background-color", "white");
 
-	$logo.attr("src", "images/dubhacks_logo_white.svg");
+	$logo.attr("src", "/images/dubhacks_logo_white.svg");
 	// $color_band.css("opacity", "0");
 
 	if ($(document).scrollTop() > $header_container.outerHeight()) {
@@ -61,14 +61,14 @@ $(document).scroll(function() {
 
 // Changes color of social media links to pink.
 function colorLogosPink () {
-	$fb.attr("src", "images/facebook_pink.png");
-	$twitter.attr("src", "images/twitter_pink.png");
-	$mail.attr("src", "images/email_pink.png");
+	$fb.attr("src", "/images/facebook_pink.png");
+	$twitter.attr("src", "/images/twitter_pink.png");
+	$mail.attr("src", "/images/email_pink.png");
 }
 
 // Changes color of social media links to white.
 function colorLogosWhite () {
-	$fb.attr("src", "images/facebook_white.png");
-	$twitter.attr("src", "images/twitter_white.png");
-	$mail.attr("src", "images/email_white.png");
+	$fb.attr("src", "/images/facebook_white.png");
+	$twitter.attr("src", "/images/twitter_white.png");
+	$mail.attr("src", "/images/email_white.png");
 }

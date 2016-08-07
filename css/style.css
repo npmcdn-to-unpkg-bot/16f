@@ -729,7 +729,6 @@ a {
 	width: 102vw;
 	bottom: -4vh;
 	left: -2vw;
-
 	position: absolute;
 }
 
@@ -816,6 +815,74 @@ a {
 	cursor: pointer;
 }
 
+/*
+////////////////////
+////// TEAM ////////
+////////////////////
+*/
+
+
+.meet_team #navbar_container:hover {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.meet_team #navbar_container {
+	position:absolute;
+}
+
+#team_container {
+	background: linear-gradient(#F17D69, #EA1B75);
+	width: 100vw;
+	position: relative;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	padding-top: 100px;
+}
+
+#team_content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 50vh;
+}
+
+#team_container #skyline {
+	bottom: -6vh;
+}
+
+#meet_the_team {
+	text-align: center;
+}
+
+#meet_the_team h3 {
+	font-family: Nevis;
+	border: 5px black solid;
+	padding: 10px;
+	display: inline-block;
+	font-size: 200%;
+	opacity: 0.7;
+	transition: all 0.2s ease;
+}
+
+.team_pic {
+	display: inline-block;
+	width: 14vw;
+	height: 25vh;
+	margin: 2% 5%;
+	background: #333;
+	border-radius: 50%;
+}
+
+/*Logic for photo hovers*/
+#team_photo div:nth-child(1) {
+	background-image: url('/images/team/Mahir.jpg');
+	background-size: cover;
+}
+
+#team_photo div:nth-child(1):hover {
+	background: #000;
+}
 
 
 /*
