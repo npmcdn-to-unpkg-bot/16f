@@ -36,10 +36,7 @@ $navbar_container.hover(function(){
 
 	$logo.attr("src", "/images/dubhacks_logo_white.svg");
 	// $color_band.css("opacity", "0");
-
-	if ($(document).scrollTop() > $header_container.outerHeight()) {
-		colorLogosWhite();
-	}
+	colorLogosWhite();
 });
 
 // Changes color of social media links after it scrolls past
@@ -55,7 +52,7 @@ $(document).scroll(function() {
 	} else if (!isHoveringOver && $(document).scrollTop() > $header_container.outerHeight()) {
 		colorLogosWhite();
 	} else {
-		colorLogosPink();
+		colorLogosWhite();
 	}
 });
 

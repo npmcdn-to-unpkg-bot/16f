@@ -11,6 +11,16 @@
 	  <meta property="description" content="Join us at the University of Washington to build the next generation of innovative software and hardware hacks." />
 		<link href='https://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
 		<script src="https://use.fontawesome.com/09a02fca2b.js"></script>
+
+		<link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
+		<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
+		<script type="text/javascript" src="css/slick/slick.min.js"></script>
+
+
+
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="icon" href="images/final_logo.png">
 		<script>
@@ -20,7 +30,7 @@
 		</script>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 
-		<title>DubHacks 2016</title>
+		<title>DubHacks Fall 2016</title>
 	</head>
 	<body>
 
@@ -34,44 +44,57 @@
 			<li class="in_page_links"><a onclick="scrollTo('#sponsor_container')">Sponsors</a></li>
 			<li class="in_page_links"><a href="/team">Team</a></li>
 			<li class="navbar_contact_link" id="fb">
-				<a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><img src="images/facebook_pink.png"></a>
+				<a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><img src="images/facebook_white.png"></a>
 			</li>
 			<li class="navbar_contact_link" id="twitter">
-				<a target="_twit" href="https://twitter.com/DubHacks?lang=en"><img src="images/twitter_pink.png"></a>
+				<a target="_twit" href="https://twitter.com/DubHacks?lang=en"><img src="images/twitter_white.png"></a>
 			</li>
 			<li class="navbar_contact_link"  id="mail">
-				<a href="mailto:info@dubhacks.co"><img src="images/email_pink.png"></a>
+				<a href="mailto:info@dubhacks.co"><img src="images/email_white.png"></a>
 			</li>
 		</ul>
-
 		<div id="header_container">
-			<img id="moon" src="images/MOON_PNG.png">
-			<img id="astronaut" src="images/Astronaut_PNG.png">
-			<img id="big_pink_logo" src="images/final_logo.png">
+			<div>
+
+				<section class="carousel">
+					<div class="carousel-cell panel-1">
+						<img src="images/panels/environment_panel.png" alt="">
+						<h2>Innovate for a better tomorrow.</h2>
+					</div>
+					<div class="carousel-cell panel-2">
+						<img src="images/panels/social_justice_panel.png" alt="">
+						<h2>Desire to uplift and empower humanity.</h2>
+					</div>
+					<div class="carousel-cell panel-3">
+						<img src="images/panels/diversity_panel.png" alt="">
+						<h2>Unify collective experiences and perspectives.</h2>
+					</div>
+					<div class="carousel-cell panel-4">
+						<img src="images/panels/education_panel.png" alt="">
+						<h2>Cultivate ingenuity to impact the world.</h2>
+					</div>
+					<div class="carousel-cell panel-5">
+						<img src="images/panels/accessibility_panel.png" alt="">
+						<h2>Harness unique abilities to push us forward.</h2>
+					</div>
+					<div class="carousel-cell panel-6">
+						<img src="images/panels/environment_panel.png" alt="">
+						<h2>Innovate for a better tomorrow.</h2>
+					</div>
+				</section>
+			</div>
 			<div id="content">
-				<img id="small_pink_logo" src="images/final_logo.png">
-				<div id="box_container">
-					<div class="box">
-						<div>October 15-16, 2016</div>
-						<div>UNIVERSITY OF WASHINGTON</div>
-						<div>Seattle</div>
-					</div>
-					<div class="box button">
-						<a href="#">Register</a>
-					</div>
-					<div class="box button">
-						<a href="#">Apply to Sponsor</a>
-					</div>
+				<div class="box button">
+					<a href="#">Join</a>
+				</div>
+				<img id="big_dubhacks_logo" src="images/dubhacks_logo_white.svg">
+				<div class="box button">
+					<a href="#">Sponsor</a>
 				</div>
 			</div>
 		</div>
 
 		<div id="mission_container">
-    		<div id="our_mission">
-    			<h1>Our Mission</h1>
-    			<div id="big_astronaut_placeholder">astronaut</div>
-    		</div>
-
 			<div class="believe_connect_build">
 			    <div id="our_mission_title">Our Mission</div>
 			    <div id="believe">Believe. Connect. Build.</div>
@@ -87,7 +110,6 @@
 		<div id="faq_container">
 			<div id="faq_flat_section">
 				<h1>Frequently Asked Questions</h1>
-				<div id="faq_flat_placeholder">whatever</div>
 			</div>
 			<div id="faq-list-section">
 				<div id="faq_title">FAQ</div>
@@ -193,7 +215,6 @@
 		<div id="schedule_container">
 			<div id="schd_flat_section">
 				<h1>Schedule</h1>
-				<div id="schd_flat_placeholder">whatever</div>
 			</div>
 			<div id="schd-section">
 				<div class="schd_column">
@@ -212,7 +233,9 @@
 		</div>
 
 		<div id="sponsor_container">
-			<h1>Sponsors</h1>
+			<div id="sponsor_flat_section">
+				<h1>Sponsor</h1>
+			</div>
 			<div id="logo_container">
 				<img class="plat_logo" src="images/microsoft_logo.png">
 
@@ -252,7 +275,7 @@
 				</div>
 				<img id="big_dubhacks_logo" src="images/dubhacks_logo_white.svg">
 				<div id="meet_team">
-					<h3>Meet the Team</h3>
+					<a href="/team"><h3>Meet the Team</h3></a>
 				</div>
 			</div>
 
@@ -264,4 +287,17 @@
 	</body>
 	<script src="js/schedule.js"></script>
 	<script src="js/navbar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.carousel').slick({
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				speed: 5000,
+				pauseOnHover: false,
+				pauseOnDotsHover: true
+			});
+		});
+	</script>
 </html>
