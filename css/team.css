@@ -197,55 +197,55 @@ h3 {
 
 
 #navid {
-	background: url("../images/navidclr.png"); background-size: 250px 250px;
+	background: url("images/team/navidclr.png"); background-size: 250px 250px;
 }
 #maria {
-	background: url("../images/mariaclr.png"); background-size: 250px 250px;
+	background: url("images/team/mariaclr.png"); background-size: 250px 250px;
 }
 #aishu {
-	background: url("../images/aishuclr.png"); background-size: 250px 250px;
+	background: url("images/team/aishuclr.png"); background-size: 250px 250px;
 }
 #mackenna {
-	background: url("../images/mackennaclr.png"); background-size: 250px 250px;
+	background: url("images/team/mackennaclr.png"); background-size: 250px 250px;
 }
 #lucas {
-	background: url("../images/lucasclr.png"); background-size: 250px 250px;
+	background: url("../images/team/lucasclr.png"); background-size: 250px 250px;
 }
 #nihar {
-	background: url("../images/niharclr.png"); background-size: 250px 250px;
+	background: url("../images/team/niharclr.png"); background-size: 250px 250px;
 }
 #cedric {
-	background: url("../images/cedricclr.png"); background-size: 250px 250px;
+	background: url("../images/team/cedricclr.png"); background-size: 250px 250px;
 }
 #mahir {
-	background: url("../images/mahirclr.png"); background-size: 250px 250px;
+	background: url("../images/team/mahirclr.png"); background-size: 250px 250px;
 }
 #ayush {
-	background: url("../images/ayushclr.png"); background-size: 250px 250px;
+	background: url("../images/team/ayushclr.png"); background-size: 250px 250px;
 }
 #larissa {
-	background: url("../images/larissaclr.png"); background-size: 250px 250px;
+	background: url("../images/team/larissaclr.png"); background-size: 250px 250px;
 }
 #david {
-	background: url("../images/davidclr.png"); background-size: 250px 250px;
+	background: url("../images/team/davidclr.png"); background-size: 250px 250px;
 }
 #malia {
-	background: url("../images/maliaclr.png"); background-size: 250px 250px;
+	background: url("../images/team/maliaclr.png"); background-size: 250px 250px;
 }
 #skyler {
-	background: url("../images/skylerclr.png"); background-size: 250px 250px;
+	background: url("../images/team/skylerclr.png"); background-size: 250px 250px;
 }
 #erin {
-	background: url("../images/erinclr.png"); background-size: 250px 250px;
+	background: url("../images/team/erinclr.png"); background-size: 250px 250px;
 }
 #gio {
-	background: url("../images/gioclr.png"); background-size: 250px 250px;
+	background: url("../images/team/gioclr.png"); background-size: 250px 250px;
 }
 #emily {
-	background: url("../images/emilyclr.png"); background-size: 250px 250px;
+	background: url("../images/team/emilyclr.png"); background-size: 250px 250px;
 }
 #beth {
-	background: url("../images/bethclr.png"); background-size: 250px 250px;
+	background: url("../images/team/bethclr.png"); background-size: 250px 250px;
 }
 #dubhacks_logo_pink {
 	background: url("../images/dubhacks_logo_pink.svg");
@@ -259,71 +259,56 @@ h3 {
 
 
 #navid:hover {
-	background: url("../images/navidbw.png"); background-size: 250px 250px;
+	background: url("images/team/navidbw.png"); background-size: 250px 250px;
 }
 #maria:hover {
-	background: url("../images/mariabw.png"); background-size: 250px 250px;
+	background: url("images/team/mariabw.png"); background-size: 250px 250px;
 }
 #aishu:hover {
-	background: url("../images/aishubw.png"); background-size: 250px 250px;
+	background: url("images/team/aishubw.png"); background-size: 250px 250px;
 }
 #mackenna:hover {
-	background: url("../images/mackennabw.png"); background-size: 250px 250px;
+	background: url("images/team/mackennabw.png"); background-size: 250px 250px;
 }
 #lucas:hover {
-	background: url("../images/lucasbw.png"); background-size: 250px 250px;
+	background: url("../images/team/lucasbw.png"); background-size: 250px 250px;
 }
 #nihar:hover {
-	background: url("../images/niharbw.png"); background-size: 250px 250px;
+	background: url("../images/team/niharbw.png"); background-size: 250px 250px;
 }
 #cedric:hover {
-	background: url("../images/cedricbw.png"); background-size: 250px 250px;
+	background: url("../images/team/cedricbw.png"); background-size: 250px 250px;
 }
 #mahir:hover {
-	background: url("../images/mahirbw.png"); background-size: 250px 250px;
+	background: url("../images/team/mahirbw.png"); background-size: 250px 250px;
 }
 #ayush:hover {
-	background: url("../images/ayushbw.png"); background-size: 250px 250px;
+	background: url("../images/team/ayushbw.png"); background-size: 250px 250px;
 }
 #larissa:hover {
-	background: url("../images/larissabw.png"); background-size: 250px 250px;
+	background: url("../images/team/larissabw.png"); background-size: 250px 250px;
 }
 #david:hover {
-	background: url("../images/davidbw.png"); background-size: 250px 250px;
+	background: url("../images/team/davidbw.png"); background-size: 250px 250px;
 }
 #malia:hover {
-	background: url("../images/maliabw.png"); background-size: 250px 250px;
+	background: url("../images/team/maliabw.png"); background-size: 250px 250px;
 }
 #skyler:hover {
-	background: url("../images/skylerbw.png"); background-size: 250px 250px;
+	background: url("../images/team/skylerbw.png"); background-size: 250px 250px;
 }
 #erin:hover {
-	background: url("../images/erinbw.png"); background-size: 250px 250px;
+	background: url("../images/team/erinbw.png"); background-size: 250px 250px;
 }
 #gio:hover {
-	background: url("../images/giobw.png"); background-size: 250px 250px;
+	background: url("../images/team/giobw.png"); background-size: 250px 250px;
 }
 #emily:hover {
-	background: url("../images/emilybw.png"); background-size: 250px 250px;
+	background: url("../images/team/emilybw.png"); background-size: 250px 250px;
 }
 #beth:hover {
-	background: url("../images/bethbw.png"); background-size: 250px 250px;
+	background: url("../images/team/bethbw.png"); background-size: 250px 250px;
 }
 #dubhacks_logo_pink:hover {
 	background: url("../images/dubhacks_logo_pink.svg");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
