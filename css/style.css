@@ -911,6 +911,10 @@ a {
 	position:absolute;
 }
 
+.meet_team #footer_container {
+	background: #ea1875;
+}
+
 #team_container {
 	background: linear-gradient(#F17D69, #EA1B75);
 	width: 100vw;
