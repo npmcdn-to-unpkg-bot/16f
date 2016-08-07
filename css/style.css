@@ -52,6 +52,13 @@ body {
 	font-family: Nevis;
 }
 
+.panel-1 h2 {
+	padding-left: calc(50vw - 395px);
+}
+
+.panel-5 h2 {
+	padding-left: calc(50vw - 275px);
+}
 
 .panel-2 h2 {
 	padding-left: calc(50vw - 350px);
@@ -61,17 +68,15 @@ body {
 	padding-left: calc(50vw - 425px);
 }
 
-.panel-4 h2 {
+.panel-6 h2 {
 	padding-left: calc(50vw - 370px);
 }
 
-.panel-5 h2 {
+.panel-4 h2 {
 	padding-left: calc(50vw - 390px);
 }
 
-.panel-6 h2 {
-	padding-left: calc(50vw - 395px);
-}
+
 
 .carousel {
 	background: #EEE;
@@ -775,10 +780,9 @@ a {
 	opacity: 1;
 }
 
-#big_dubhacks_logo {
+#big_dubhacks_logo, #big_dubhacks_logo_no_spin {
 	width: 25vw;
 	margin: 0 2.5vw;
-
 	transition: all 1.7s ease;
 }
 
