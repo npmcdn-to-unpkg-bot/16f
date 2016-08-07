@@ -79,23 +79,6 @@ body {
 	height: 100vh;
 }
 
-/* cell number */
-/*.carousel-cell:before {
-display: block;
-text-align: center;
-content: counter(gallery-cell);
-line-height: 200px;
-font-size: 80px;
-color: white;
-}*/
-
-/*.panel-1 {background-image: url("../images/placeholders/environment.jpg");}
-.panel-2 {background-image: url("../images/placeholders/orange.jpg");}
-.panel-3 {background-image: url("../images/placeholders/pink.jpg");}
-.panel-4 {background-image: url("../images/placeholders/purple.jpg");}
-.panel-5 {background-image: url("../images/placeholders/teal.jpg");}
-.panel-6 {background-image: url("../images/placeholders/yellow.jpg");}*/
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -904,7 +887,11 @@ a {
 
 
 .meet_team #navbar_container:hover {
-	background-color: rgba(255, 255, 255, 0);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.meet_team #navbar_container:hover li a {
+	color: #000;
 }
 
 .meet_team #navbar_container {
@@ -917,7 +904,7 @@ a {
 
 #team_container {
 	background: linear-gradient(#F17D69, #EA1B75);
-	width: 100vw;
+	width: 100%;
 	position: relative;
 	text-align: center;
 	color: white;
@@ -950,11 +937,19 @@ a {
 	transition: all 0.2s ease;
 }
 
+#profiles {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .picture_div {
 	display: inline-block;
-	margin: 2% 5%;
-	width: 200px;
-	height: 200px;
+	margin: 2% 7.8%;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 	transition: background-image 0.5s ease;
 }

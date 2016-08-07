@@ -22,7 +22,7 @@
 		<title>Team | DubHacks 2016</title>
 	</head>
 	<body class="meet_team">
-    <ul id="navbar_container">
+    <ul id="navbar_container" onmouseover="colorLogosPink(this)" onmouseout="colorLogosWhite(this)">
       <div id="color_band"></div>
       <li><a href="/"><img id="navbar_dubhacks_logo" src="/images/dubhacks_logo_white.svg"></a></li>
       <!-- <li><img id="navbar_dubhacks_logo" src="images/dubhacks_logo_white.svg"></li> -->
@@ -30,13 +30,13 @@
       <li class="in_page_links"><a href="/#sponsor_container">Sponsors</a></li>
       <li></li>
       <li class="navbar_contact_link" id="fb">
-        <a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><img src="/images/facebook_pink.png"></a>
+        <a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><img src="/images/facebook_white.png"></a>
       </li>
       <li class="navbar_contact_link" id="twitter">
-        <a target="_twit" href="https://twitter.com/DubHacks?lang=en"><img src="/images/twitter_pink.png"></a>
+        <a target="_twit" href="https://twitter.com/DubHacks?lang=en"><img src="/images/twitter_white.png"></a>
       </li>
       <li class="navbar_contact_link"  id="mail">
-        <a href="mailto:info@dubhacks.co"><img src="/images/email_pink.png"></a>
+        <a href="mailto:info@dubhacks.co"><img src="/images/email_white.png"></a>
       </li>
     </ul>
     <div id="team_container">
@@ -50,28 +50,44 @@
     <div id="meet_the_team">
       <h3>Meet the Team</h3>
     </div>
-		<div id="navid" class="picture_div"></div>
-    <div id="maria" class="picture_div"></div>
-    <div id="aishu" class="picture_div"></div>
-    <div id="mackenna" class="picture_div"></div>
-    <div id="lucas" class="picture_div"></div>
-    <div id="nihar" class="picture_div"></div>
-    <div id="cedric" class="picture_div"></div>
-    <div id="mahir" class="picture_div"></div>
-    <div id="ayush" class="picture_div"></div>
-    <div id="larissa" class="picture_div"></div>
-    <div id="david" class="picture_div"></div>
-    <div id="malia" class="picture_div"></div>
-    <div id="skyler" class="picture_div"></div>
-    <div id="erin" class="picture_div"></div>
-    <div id="gio" class="picture_div"></div>
-    <div id="emily" class="picture_div"></div>
-    <div id="beth" class="picture_div"></div>
+		<div id="profiles">
+			<div id="navid" class="picture_div"></div>
+	    <div id="maria" class="picture_div"></div>
+	    <div id="aishu" class="picture_div"></div>
+	    <div id="mackenna" class="picture_div"></div>
+	    <div id="lucas" class="picture_div"></div>
+	    <div id="nihar" class="picture_div"></div>
+	    <div id="cedric" class="picture_div"></div>
+	    <div id="mahir" class="picture_div"></div>
+	    <div id="ayush" class="picture_div"></div>
+	    <div id="larissa" class="picture_div"></div>
+	    <div id="david" class="picture_div"></div>
+	    <div id="malia" class="picture_div"></div>
+	    <div id="skyler" class="picture_div"></div>
+	    <div id="erin" class="picture_div"></div>
+	    <div id="gio" class="picture_div"></div>
+	    <div id="emily" class="picture_div"></div>
+	    <div id="beth" class="picture_div"></div>
+		</div>
 		<div id="footer_container">
 			<div id="contact_footer_bar">
-				<div><a target="_mail" href="mailto:info@dubhacks.co">contact us!</a></div>
+				<div><a target="_mail" href="mailto:info@dubhacks.co">contact us</a></div>
 				<div id="links">code of conduct | <a href="http://dubhacks.co/2014">2014</a> | <a href="http://dubhacks.co/2015">2015</a></div>
 			</div>
 		</div>
+		<script>
+			function colorLogosPink () {
+				$("#fb > a > img").attr("src", "/images/facebook_pink.png");
+				$("#twitter > a > img").attr("src", "/images/twitter_pink.png");
+				$("#mail > a > img").attr("src", "/images/email_pink.png");
+				$("#navbar_dubhacks_logo").attr("src", "/images/final_logo.png");
+			}
+			function colorLogosWhite () {
+				$("#fb > a > img").attr("src", "/images/facebook_white.png");
+				$("#twitter > a > img").attr("src", "/images/twitter_white.png");
+				$("#mail > a > img").attr("src", "/images/email_white.png");
+				$("#navbar_dubhacks_logo").attr("src", "/images/dubhacks_logo_white.svg");
+			}
+		</script>
   </body>
 </html>
