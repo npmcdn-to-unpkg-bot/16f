@@ -132,7 +132,7 @@ function processData(data) {
     return data.map(function (d) {
         var period = '{empty}';
         if (d.start && d.end) {
-            period = timeToAMPM(d.start) + '-' + timeToAMPM(d.end); 
+            period = timeToAMPM(d.start); 
         } else {
             period = timeToAMPM(d.start ? d.start : d.end);
         }
