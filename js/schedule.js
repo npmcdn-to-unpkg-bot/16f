@@ -30,7 +30,7 @@ var schedule = [
     },
     {
         id: 4,
-        name: "Start Hacking!",
+        name: "Start Projects!",
         start: new Date(2016, 9, 15, 19, 0),
     },
     {
@@ -110,7 +110,7 @@ var config = {
     textPadding: 15,
     cellHeight: 50,
     svg: {
-        width: 350,
+        width: 320,
         height: 320,
         margin: 20
     }
