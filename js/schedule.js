@@ -88,7 +88,7 @@ var schedule = [
     },
     {
         id: 14,
-        name: "Final Judging + Closing",
+        name: "Closing",
         start: new Date(2016, 9, 16, 18, 0),
         end: new Date(2016, 9, 16, 19, 30)
     }
@@ -104,10 +104,10 @@ var config = {
         circle: '#000000',
         text: '#000000'
     },
-    fontSize: 14,
+    fontSize: 15,
     fontFamily: 'nevis',
     circleSize: 3,
-    textPadding: 15,
+    textPadding: 10,
     cellHeight: 50,
     svg: {
         width: 320,
