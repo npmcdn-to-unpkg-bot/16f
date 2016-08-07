@@ -418,6 +418,8 @@ a {
 .believe_connect_build div, .believe_connect_build ul {
 	display: flex;
 	justify-content: center;
+	list-style: none;
+	display: inline-block;
 }
 
 #our_mission_title {
@@ -456,6 +458,7 @@ a {
 	color: black;
 	font-size: 25px;
 	margin-top: 40px;
+
 }
 
 #pink_logo {
