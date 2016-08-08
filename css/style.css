@@ -531,6 +531,7 @@ a {
 	-webkit-column-gap: 7vw; /* Chrome, Safari, Opera */
 	-moz-column-gap: 7vw; /* Firefox */
 	column-gap: 7vw;
+	margin-top: 5vh;
 }
 
 .faq_column div {

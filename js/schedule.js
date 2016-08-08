@@ -30,7 +30,7 @@ var schedule = [
     },
     {
         id: 4,
-        name: "Start Hacking!",
+        name: "Start Projects!",
         start: new Date(2016, 9, 15, 19, 0),
     },
     {
@@ -88,7 +88,7 @@ var schedule = [
     },
     {
         id: 14,
-        name: "Final Judging + Closing",
+        name: "Closing",
         start: new Date(2016, 9, 16, 18, 0),
         end: new Date(2016, 9, 16, 19, 30)
     }
@@ -104,13 +104,13 @@ var config = {
         circle: '#000000',
         text: '#000000'
     },
-    fontSize: 14,
+    fontSize: 15,
     fontFamily: 'nevis',
     circleSize: 3,
-    textPadding: 15,
+    textPadding: 10,
     cellHeight: 50,
     svg: {
-        width: 350,
+        width: 320,
         height: 320,
         margin: 20
     }
@@ -132,7 +132,7 @@ function processData(data) {
     return data.map(function (d) {
         var period = '{empty}';
         if (d.start && d.end) {
-            period = timeToAMPM(d.start) + '-' + timeToAMPM(d.end); 
+            period = timeToAMPM(d.start); 
         } else {
             period = timeToAMPM(d.start ? d.start : d.end);
         }
