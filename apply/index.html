@@ -1,12 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-  <!--Add the title of your typeform below-->
   <title>DubHacks Fall 2016 Application</title>
-
-  <!--CSS styles that ensure your typeform takes up all the available screen space (DO NOT EDIT!)-->
   <style type="text/css">
     html{
       margin: 0;
@@ -27,4 +23,94 @@
   <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://dubhacks16f.typeform.com/to/nJ89Va"></iframe>
   <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
 </body>
+</html> -->
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<meta property="og:title" content="DubHacks Fall 2016" />
+	  <meta property="og:site_name" content="DubHacks"/>
+	  <meta property="og:url" content="http://16f.dubhacks.co/" />
+	  <meta property="og:image" content="http://16f.dubhacks.co/images/fb_link.png" />
+	  <meta property="og:description" content="Join us at the University of Washington to build the next generation of innovative software and hardware hacks." />
+	  <meta property="description" content="Join us at the University of Washington to build the next generation of innovative software and hardware hacks." />
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+		<script src="https://use.fontawesome.com/09a02fca2b.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+		<link rel="icon" href="../images/final_logo.png">
+		<script>
+			function scrollTo(headerName) {
+				 $('html, body').animate({scrollTop:$(headerName).position().top}, 300);
+			}
+		</script>
+        <style type="text/css">
+          #navbar_container #fb {
+            margin-left: auto!important;
+          }
+          #navbar_container #mail {
+            margin-left: 30px!important;
+          }
+          #error_content {
+            align-items: center;
+            margin-bottom: 50vh;
+          }
+          #error_content div {
+              font-family: Nevis;
+              padding: 10px 3%;
+          }
+          #error_content div a {
+              color: black;
+          }
+
+        </style>
+		<title>DubHacks 2016</title>
+	</head>
+	<body>
+		<div id="team_nav">
+    <ul id="navbar_container" onmouseover="colorLogosPink(this)" onmouseout="colorLogosWhite(this)">
+      <div id="color_band"></div>
+      <li><a href="/"><img id="navbar_dubhacks_logo" src="../images/dubhacks_logo_white.svg"></a></li>
+      <li class="in_page_links"><a href="/#faq_container">FAQ</a></li>
+      <li class="navbar_contact_link" id="fb">
+        <a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><img src="../images/facebook_white.png"></a>
+      </li>
+      <li class="navbar_contact_link" id="twitter">
+        <a target="_twit" href="https://twitter.com/DubHacks?lang=en"><img src="../images/twitter_white.png"></a>
+      </li>
+      <li class="navbar_contact_link"  id="mail">
+        <a href="mailto:info@dubhacks.co"><img src="../images/email_white.png"></a>
+      </li>
+    </ul>
+		</div>
+    <div id="team_container">
+      <div id="error_content">
+        <h1>Application Error</h1>
+        <div> Unfortunately the software we use for our application, Typeform, is down. We are waiting to hear back from the company on when it is fixed. Please check back in a bit. Email <a href="mailto:info@dubhacks.co">info@dubhacks.co</a> if you have any questions. </div>
+      </div>
+    </div>
+		<div>
+			<div id="contact_footer_bar">
+				<div><a target="_mail" href="mailto:info@dubhacks.co">contact us</a></div>
+				<div id="links"><a href="http://dubhacks.co/codeofconduct">code of conduct</a> | <a href="http://dubhacks.co/2014">2014</a> | <a href="http://dubhacks.co/2015">2015</a></div>
+			</div>
+		</div>
+		<script>
+			function colorLogosPink () {
+                $("#navbar_container > .in_page_links > a").css("color", "#2F2F2F");
+				$("#fb > a > img").attr("src", "../images/facebook_pink.png");
+				$("#twitter > a > img").attr("src", "../images/twitter_pink.png");
+				$("#mail > a > img").attr("src", "../images/email_pink.png");
+				$("#navbar_dubhacks_logo").attr("src", "../images/final_logo.png");
+			}
+			function colorLogosWhite () {
+                $("#navbar_container > .in_page_links > a").css("color", "white");
+				$("#fb > a > img").attr("src", "../images/facebook_white.png");
+				$("#twitter > a > img").attr("src", "../images/twitter_white.png");
+				$("#mail > a > img").attr("src", "../images/email_white.png");
+				$("#navbar_dubhacks_logo").attr("src", "../images/dubhacks_logo_white.svg");
+			}
+		</script>
+  </body>
 </html>
