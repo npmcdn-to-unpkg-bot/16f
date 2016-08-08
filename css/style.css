@@ -331,7 +331,7 @@ a {
 }
 	#date-box span {
 		display: block;
-		
+
 	}
 	#date-box #date {
 		text-transform: capitalize;
@@ -967,10 +967,6 @@ a {
 	margin-left: 30px;
 }
 
-.meet_team #navbar_container #fb {
-	margin-left: 0px;
-}
-
 .meet_team #footer_container {
 	background: #ea1875;
 }
@@ -1444,7 +1440,7 @@ a {
 	#big_dubhacks_logo_no_spin {
 		width: 0;
 	}
-	
+
 
 	/*.button:hover {
 		background-color: #E91774;
