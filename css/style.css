@@ -298,13 +298,58 @@ a {
 }
 
 #content {
-	display: flex;
-	width:100%;
+	width: 100%;
 	position: absolute;
-	top: 300px;
+	top: 45vh;
 	justify-content: center;
 	vertical-align: middle;
 }
+
+#logo-join-sponsor {
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+#date-box {
+	padding: 5px;
+	border: #fff 3px solid;
+	font-family: Nevis;
+	height: 50px;
+	margin: 30vh 2vw;
+	background-color: rgba(250, 250, 250, 0.5);
+	color: white;
+	width: 20vw;
+	text-align: left;
+	margin: 2vh auto;
+	display: block;
+}
+
+#date-box:hover {
+	color: black;
+	background-color: white;
+}
+	#date-box span {
+		display: block;
+		
+	}
+	#date-box #date {
+		text-transform: capitalize;
+		font-size: 16pt;
+		font-kerning: 20;
+	}
+
+	#date-box #venue {
+		text-transform: uppercase;
+		font-size: 8pt;
+		font-kerning: 100;
+	}
+
+	#date-box #city {
+		text-transform: capitalize;
+		font-size: 12pt;
+		font-kerning: 100;
+	}
 
 #small_pink_logo {
 	height: 150px;
@@ -335,10 +380,11 @@ a {
 	padding: 2px;
 	border: #fff 3px solid;
 	font-family: Nevis;
-	width: 10%;
+	min-width: 10vw;
+	padding-top: 15px;
 	height: 50px;
 	text-align: center;
-	margin: 17% 3%;
+	margin: 15vh 2vw;
 	vertical-align: middle;
 	background-color: rgba(250, 250, 250, 0.5);
 }
@@ -351,7 +397,6 @@ a {
 }
 
 .button a {
-	vertical-align: -webkit-baseline-middle;
 	color: #fff;
 }
 
@@ -797,7 +842,8 @@ a {
 }
 
 #big_dubhacks_logo, #big_dubhacks_logo_no_spin {
-	width: 25vw;
+	width: 20vw;
+	height: 20vw;
 	margin: 0 2.5vw;
 	transition: all 1.7s ease;
 }
@@ -1261,6 +1307,14 @@ a {
 		height: 100%;
 	}
 
+	#date-box {
+		background-color: rgba(250, 250, 250, 1);
+		text-align: center;
+		color: black;
+		height: auto;
+		width: 60vw;
+	}
+
 	#footer_container {
 		display: flex;
 		justify-content: center;
@@ -1369,6 +1423,8 @@ a {
 		background-color: rgba(250, 250, 250, 1);
 		width: auto;
 		padding: 10px 30px;
+		padding-top: 20px;
+
 	}
 
 	.box a {
