@@ -1307,6 +1307,14 @@ a {
 		height: 100%;
 	}
 
+	#date-box {
+		background-color: rgba(250, 250, 250, 1);
+		text-align: center;
+		color: black;
+		height: auto;
+		width: 60vw;
+	}
+
 	#footer_container {
 		display: flex;
 		justify-content: center;
