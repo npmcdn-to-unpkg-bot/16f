@@ -1353,7 +1353,16 @@ a {
 		color: #FFF!important;
 	}
 
+	#airplane_container {
+		margin-top: 40px;
+	}
+
 	#airplane_container li img {
 		padding: 0 20px;
+	}
+
+	.believe_connect_build {
+		width: 76vw;
+		padding: 40px 12vw 50px;
 	}
 }
