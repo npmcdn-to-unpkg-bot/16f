@@ -306,6 +306,51 @@ a {
 	vertical-align: middle;
 }
 
+#logo-join-sponsor {
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+#date-box {
+	padding: 5px;
+	border: #fff 3px solid;
+	font-family: Nevis;
+	height: 50px;
+	margin: 30vh 2vw;
+	vertical-align: middle;
+	background-color: rgba(250, 250, 250, 0.5);
+	color: white;
+	width: 20vw;
+	text-align: left;
+}
+
+#date-box:hover {
+	color: black;
+	background-color: white;
+}
+	#date-box span {
+		display: block;
+		
+	}
+	#date-box #date {
+		text-transform: capitalize;
+		font-size: 16pt;
+		font-kerning: 20;
+	}
+
+	#date-box #venue {
+		text-transform: uppercase;
+		font-size: 8pt;
+		font-kerning: 100;
+	}
+
+	#date-box #city {
+		text-transform: capitalize;
+		font-size: 12pt;
+		font-kerning: 100;
+	}
+
 #small_pink_logo {
 	height: 150px;
 	margin-right: 30px;
@@ -335,7 +380,7 @@ a {
 	padding: 2px;
 	border: #fff 3px solid;
 	font-family: Nevis;
-	width: 10%;
+	min-width: 10vw;
 	height: 50px;
 	text-align: center;
 	margin: 30vh 2vw;
