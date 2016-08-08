@@ -820,8 +820,8 @@ a {
 
 	position: absolute;
 
-	-webkit-animation: fly 15s linear infinite;
-	animation: fly 15s linear infinite;
+	-webkit-animation: fly 12s linear infinite;
+	animation: fly 12s linear infinite;
 }
 
 @keyframes fly {
@@ -1398,5 +1398,13 @@ a {
 		margin: 10% 7vw;
 		width: 60vw;
 		height: 60vw;
+	}
+
+	#navbar_container li {
+	    margin: 0 20px;
+	}
+
+	#navbar_container li:nth-child(2) {
+	    margin: 0;
 	}
 }
