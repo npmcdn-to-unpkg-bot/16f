@@ -381,8 +381,8 @@ a {
 	border: #fff 3px solid;
 	font-family: Nevis;
 	min-width: 10vw;
-	padding-top: 15px;
-	height: 50px;
+	padding-top: 5px;
+	height: 35px;
 	text-align: center;
 	margin: 15vh 2vw;
 	vertical-align: middle;
@@ -1430,8 +1430,6 @@ a {
 		background-color: rgba(250, 250, 250, 1);
 		width: auto;
 		padding: 10px 30px;
-		padding-top: 20px;
-
 	}
 
 	.box a {
