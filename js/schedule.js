@@ -30,7 +30,7 @@ var schedule = [
     },
     {
         id: 4,
-        name: "Start Projects!",
+        name: "Start Projects",
         start: new Date(2016, 9, 15, 19, 0),
     },
     {
