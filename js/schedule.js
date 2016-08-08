@@ -48,7 +48,7 @@ var schedule = [
     {
         id: 7,
         name: "Snack",
-        start: new Date(2016, 9, 16, 0, 30),
+        start: new Date(2016, 9, 15, 11, 30),
         end: new Date(2016, 9, 16, 2, 30)
     },
     {
