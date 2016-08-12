@@ -209,7 +209,7 @@ a {
 	width: 80px;
 }
 
-#navbar_container > li:nth-child(6) { /* should be nth-child(5) */
+#navbar_container > li#fb {
 	margin-left: auto;
 }
 
