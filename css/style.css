@@ -1026,7 +1026,53 @@ a {
 	width: 18vw;
 	height: 18vw;
 	border-radius: 50%;
-	transition: background-image 0.5s ease;
+	transition: filter 300ms linear;
+	-webkit-transition : -webkit-filter 300ms linear;
+	-moz-transition : -moz-filter 300ms linear;
+}
+
+.position {
+	color: #fff;
+	display: none;
+	text-align: center;
+	font-family: Nevis;
+	margin: 0 15%;
+	margin-top: 30%;
+	font-size: 1.5vw;
+	font-weight: lighter;
+}
+.position span {
+	display: block;
+	font-size: 2vw;
+	border: 5px white solid;
+	margin-bottom: 3%;
+	border-radius: 3px;
+}
+
+.logistics {
+	margin: 35% 20% auto 20%;
+}
+
+.cco {
+	margin-top: 27%;
+}
+
+.single {
+	margin-top: 35%;
+}
+
+.single span {
+	font-size: 2.5vw;
+}
+
+.picture_div:hover > div.position {
+	display: block;
+}
+
+.picture_div:hover {
+	-webkit-filter: grayscale();
+	filter: grayscale();
+	-moz-filter: grayscale();
 }
 
 /*Logic for photo hovers*/
@@ -1035,18 +1081,8 @@ a {
 	background-size: cover;
 }
 
-#navid:hover {
-	background-image: url('/images/team/navidbw.png');
-	background-size: cover;
-}
-
 #maria {
 	background-image: url('/images/team/mariaclr.png');
-	background-size: cover;
-}
-
-#maria:hover {
-	background-image: url('/images/team/mariabw.png');
 	background-size: cover;
 }
 
@@ -1055,18 +1091,8 @@ a {
 	background-size: cover;
 }
 
-#aishu:hover {
-	background-image: url('/images/team/aishubw.png');
-	background-size: cover;
-}
-
 #mackenna {
 	background-image: url('/images/team/mackennaclr.png');
-	background-size: cover;
-}
-
-#mackenna:hover {
-	background-image: url('/images/team/mackennabw.png');
 	background-size: cover;
 }
 
@@ -1075,18 +1101,8 @@ a {
 	background-size: cover;
 }
 
-#lucas:hover {
-	background-image: url('/images/team/lucasbw.png');
-	background-size: cover;
-}
-
 #nihar {
 	background-image: url('/images/team/niharclr.png');
-	background-size: cover;
-}
-
-#nihar:hover {
-	background-image: url('/images/team/niharbw.png');
 	background-size: cover;
 }
 
@@ -1095,18 +1111,8 @@ a {
 	background-size: cover;
 }
 
-#cedric:hover {
-	background-image: url('/images/team/cedricbw.png');
-	background-size: cover;
-}
-
 #mahir {
 	background-image: url('/images/team/mahirclr.png');
-	background-size: cover;
-}
-
-#mahir:hover {
-	background-image: url('/images/team/mahirbw.png');
 	background-size: cover;
 }
 
@@ -1115,18 +1121,8 @@ a {
 	background-size: cover;
 }
 
-#ayush:hover {
-	background-image: url('/images/team/ayushbw.png');
-	background-size: cover;
-}
-
 #larissa {
 	background-image: url('/images/team/larissaclr.png');
-	background-size: cover;
-}
-
-#larissa:hover {
-	background-image: url('/images/team/larissabw.png');
 	background-size: cover;
 }
 
@@ -1135,18 +1131,8 @@ a {
 	background-size: cover;
 }
 
-#david:hover {
-	background-image: url('/images/team/davidbw.png');
-	background-size: cover;
-}
-
 #malia {
 	background-image: url('/images/team/maliaclr.png');
-	background-size: cover;
-}
-
-#malia:hover {
-	background-image: url('/images/team/maliabw.png');
 	background-size: cover;
 }
 
@@ -1155,18 +1141,8 @@ a {
 	background-size: cover;
 }
 
-#skyler:hover {
-	background-image: url('/images/team/skylerbw.png');
-	background-size: cover;
-}
-
 #erin {
 	background-image: url('/images/team/erinclr.png');
-	background-size: cover;
-}
-
-#erin:hover {
-	background-image: url('/images/team/erinbw.png');
 	background-size: cover;
 }
 
@@ -1175,28 +1151,13 @@ a {
 	background-size: cover;
 }
 
-#gio:hover {
-	background-image: url('/images/team/giobw.png');
-	background-size: cover;
-}
-
 #emily {
 	background-image: url('/images/team/emilyclr.png');
 	background-size: cover;
 }
 
-#emily:hover {
-	background-image: url('/images/team/emilybw.png');
-	background-size: cover;
-}
-
 #beth {
 	background-image: url('/images/team/bethclr.png');
-	background-size: cover;
-}
-
-#beth:hover {
-	background-image: url('/images/team/bethbw.png');
 	background-size: cover;
 }
 
@@ -1263,6 +1224,23 @@ a {
 	.schd_column div p {
 		font-size: 120%;
 	}
+
+	.position span {
+		border: 4px white solid;
+	}
+
+	.logistics {
+		margin: 35% 20% auto 20%;
+	}
+
+	.cco {
+		margin-top: 20%;
+	}
+
+	.single {
+		margin-top: 35%;
+	}
+
 }
 
 
@@ -1480,4 +1458,13 @@ a {
 	#navbar_container li:nth-child(2) {
 	    margin: 0;
 	}
+
+	.position {
+		font-size: 100%;
+	}
+
+	.position span {
+		font-size: 150%;
+	}
+
 }
