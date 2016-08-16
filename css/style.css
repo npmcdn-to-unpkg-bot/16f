@@ -769,11 +769,18 @@ a {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	width: 90vw;
+}
+
+#logo_container a {
+	margin: 3vw;
 }
 
 #logo_container img {
 	width: auto;
-	margin: 3vw;
+	-webkit-filter: brightness(0%) invert(100%);
+	filter: brightness(0%) invert(100%);
+	-moz-filter: brightness(0%) invert(100%);
 }
 
 #logo_container img:hover {
@@ -793,7 +800,7 @@ a {
 }
 
 .bronze_logo {
-	height: 5vh;
+	height: 7vh;
 }
 
 
