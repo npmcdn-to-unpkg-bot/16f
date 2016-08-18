@@ -754,7 +754,7 @@ a {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 90vw;
-	padding: 0 5vw;
+	padding: 30px 5vw;
 }
 
 #sponsor_flat_section {
@@ -768,6 +768,7 @@ a {
 #logo_container > div {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	width: 90vw;
 }
@@ -788,21 +789,39 @@ a {
 }
 
 .plat_logo {
-	height: 22vh;
+	height: 25vh;
 }
 
 .gold_logo {
-	height: 13vh;
+	height: 17vh;
 }
 
 .silver_logo {
-	height: 8vh;
+	height: 9vh;
 }
 
 .bronze_logo {
-	height: 7vh;
+	height: 8vh;
 }
 
+.partner_logo {
+	height: 10vh;
+}
+
+#mlh-trust-badge {
+	height: auto;
+}
+
+#logo_container #mlh {
+	-webkit-filter: none;
+	filter: none;
+	-moz-filter: none;
+
+	height: auto;
+	max-width:100px;
+	min-width:60px;
+	width:10%
+}
 
 /*
 /////////////////////
@@ -1241,6 +1260,10 @@ a {
 		height: 4vh;
 	}
 
+	.partner_logo {
+		height: 8vh;
+	}
+
 	.faq_column {
 		-webkit-column-count: 1; /* Chrome, Safari, Opera */
 		-moz-column-count: 1; /* Firefox */
@@ -1317,6 +1340,11 @@ a {
 
 	#logo_container .bronze_logo {
 		width: 60vw;
+		height: 100%;
+	}
+
+	#logo_container .partner_logo {
+		width: 70vw;
 		height: 100%;
 	}
 
