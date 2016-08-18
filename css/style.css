@@ -319,7 +319,7 @@ a {
 	background-color: rgba(250, 250, 250, 0.5);
 	color: white;
 	width: 20vw;
-	text-align: left;
+	text-align: center;
 	margin: 2vh auto;
 	display: block;
 	pointer-events:none;
