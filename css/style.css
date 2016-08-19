@@ -804,8 +804,14 @@ a {
 	height: 8vh;
 }
 
+#logo_container #namecheap {
+	-webkit-filter: brightness(20%) invert(100%);
+	filter: brightness(20%) invert(100%);
+	-moz-filter: brightness(20%) invert(100%);
+}
+
 .partner_logo {
-	height: 10vh;
+	height: 5vh;
 }
 
 #mlh-trust-badge {
@@ -816,7 +822,6 @@ a {
 	-webkit-filter: none;
 	filter: none;
 	-moz-filter: none;
-
 	height: auto;
 	max-width:100px;
 	min-width:60px;
@@ -1323,29 +1328,35 @@ a {
 		padding-bottom: 10vh;
 	}
 
-	#logo_container .plat_logo {
+	/*#logo_container .plat_logo {
 		width: 90vw;
-		height: 100%;
 	}
 
 	#logo_container .gold_logo {
 		width: 80vw;
-		height: 100%;
 	}
 
 	#logo_container .silver_logo {
 		width: 70vw;
-		height: 100%;
 	}
 
 	#logo_container .bronze_logo {
 		width: 60vw;
-		height: 100%;
 	}
 
 	#logo_container .partner_logo {
 		width: 70vw;
-		height: 100%;
+	}*/
+
+	#logo_container .plat_logo, #logo_container .gold_logo, #logo_container .silver_logo, #logo_container .bronze_logo, #logo_container .partner_logo {
+		min-height: 60%;
+		width: auto;
+		max-width: 90%;
+	}
+
+	#logo_container .plat_logo {
+		width: 90%;
+		height: auto;
 	}
 
 	#date-box {
