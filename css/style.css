@@ -1349,7 +1349,7 @@ a {
 	}*/
 
 	#logo_container .plat_logo, #logo_container .gold_logo, #logo_container .silver_logo, #logo_container .bronze_logo, #logo_container .partner_logo {
-		min-height: 60%;
+		
 		width: auto;
 		max-width: 90%;
 	}
