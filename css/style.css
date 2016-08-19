@@ -754,7 +754,7 @@ a {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 90vw;
-	padding: 0 5vw;
+	padding: 30px 5vw;
 }
 
 #sponsor_flat_section {
@@ -768,12 +768,20 @@ a {
 #logo_container > div {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
+	width: 90vw;
+}
+
+#logo_container a {
+	margin: 3vw;
 }
 
 #logo_container img {
 	width: auto;
-	margin: 3vw;
+	-webkit-filter: brightness(0%) invert(100%);
+	filter: brightness(0%) invert(100%);
+	-moz-filter: brightness(0%) invert(100%);
 }
 
 #logo_container img:hover {
@@ -781,22 +789,44 @@ a {
 }
 
 .plat_logo {
-	height: 22vh;
+	height: 25vh;
 }
 
 .gold_logo {
-	height: 13vh;
+	height: 17vh;
 }
 
 .silver_logo {
-	height: 8vh;
+	height: 9vh;
 }
 
 .bronze_logo {
+	height: 8vh;
+}
+
+#logo_container #namecheap {
+	-webkit-filter: brightness(20%) invert(100%);
+	filter: brightness(20%) invert(100%);
+	-moz-filter: brightness(20%) invert(100%);
+}
+
+.partner_logo {
 	height: 5vh;
 }
 
+#mlh-trust-badge {
+	height: auto;
+}
 
+#logo_container #mlh {
+	-webkit-filter: none;
+	filter: none;
+	-moz-filter: none;
+	height: auto;
+	max-width:100px;
+	min-width:60px;
+	width:10%
+}
 
 /*
 /////////////////////
@@ -1235,6 +1265,10 @@ a {
 		height: 4vh;
 	}
 
+	.partner_logo {
+		height: 8vh;
+	}
+
 	.faq_column {
 		-webkit-column-count: 1; /* Chrome, Safari, Opera */
 		-moz-column-count: 1; /* Firefox */
@@ -1294,24 +1328,39 @@ a {
 		padding-bottom: 10vh;
 	}
 
-	#logo_container .plat_logo {
+	/*#logo_container .plat_logo {
 		width: 90vw;
-		height: 100%;
 	}
 
 	#logo_container .gold_logo {
 		width: 80vw;
-		height: 100%;
 	}
 
 	#logo_container .silver_logo {
 		width: 70vw;
-		height: 100%;
 	}
 
 	#logo_container .bronze_logo {
 		width: 60vw;
-		height: 100%;
+	}
+
+	#logo_container .partner_logo {
+		width: 70vw;
+	}*/
+
+	#logo_container .plat_logo, #logo_container .gold_logo, #logo_container .silver_logo, #logo_container .bronze_logo, #logo_container .partner_logo {
+		
+		width: auto;
+		max-width: 90%;
+	}
+
+	#logo_container .plat_logo {
+		width: 90%;
+		height: auto;
+	}
+
+	#logo_container .partner_logo {
+		height: auto;
 	}
 
 	#date-box {
