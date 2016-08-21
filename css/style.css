@@ -325,6 +325,7 @@ a {
 	pointer-events:none;
 }
 
+
 #date-box:hover {
 	color: black;
 	background-color: white;
@@ -856,7 +857,9 @@ a {
 
 	z-index: 1000;
 }
-
+.date-box-bottom {
+	margin: 4vh !important;
+}
 #social_media_logos {
 	display: flex;
 	justify-content: space-around;
@@ -1327,7 +1330,7 @@ a {
 	}*/
 
 	#logo_container .plat_logo, #logo_container .gold_logo, #logo_container .silver_logo, #logo_container .bronze_logo, #logo_container .partner_logo {
-		
+
 		width: auto;
 		max-width: 90%;
 	}
