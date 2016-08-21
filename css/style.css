@@ -847,7 +847,9 @@ a {
 	padding-top: 100px;
 
 }
-
+#links{
+	color: white !important;
+}
 #footer_content {
 	display: flex;
 	justify-content: space-around;
@@ -929,19 +931,19 @@ color: black
 	bottom: 0;
 	left: 0;
 	width: 98vw;
-	background-color: white;
+	background-color: #D72169;
 	padding: 1vw;
-	color: #D72169;
+	color: white;
 }
 
 
 #contact_footer_bar a,
 #contact_footer_bar a:hover {
-	color: #D72169;
+	color: white;
 }
 
 #contact_footer_bar a:visited {
-	color: #D72169;
+	color: white;
 }
 
 #contact_footer_bar div:nth-child(2) {
@@ -950,7 +952,7 @@ color: black
 
 #contact_footer_bar div:nth-child(1) a {
 	text-decoration: none;
-	color: #D72169;
+	color: white;
 }
 
 #contact_footer_bar div:nth-child(1):hover {
