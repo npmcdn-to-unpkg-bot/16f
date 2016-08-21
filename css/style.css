@@ -861,11 +861,13 @@ a {
 }
 .date-box-bottom {
 	margin: 4vh !important;
+	width: auto !important;
 }
 #big_dubhacks_logo, #big_dubhacks_logo_no_spin {
 	width: 20vw;
 	height: 20vw;
 	margin: 0 2.5vw;
+	margin-right: 1vw;
 	transition: all 1.7s ease;
 }
 
