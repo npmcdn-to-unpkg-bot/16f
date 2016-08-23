@@ -254,6 +254,11 @@ a {
 	background: linear-gradient(90deg, #F8CA23 0%, #F8CA23 16.66%, #E68060 16.66%, #E68060 33.32%, #79C5B6 33.32%, #79C5B6 50%, #525E9B 50%, #525E9B 66.64%, #D72169 66.64%, #D72169 83.3%, #983D78 83.3%, #983D78 100%);
 }
 
+#nav-mlh-trust-badge {
+	
+	transition: opacity 0.2s ease;
+}
+
 
 
 /*
