@@ -12,6 +12,7 @@ var mobileScrollBack = false;
 var isHoveringOver = false;
 var isPastFrontPage = false;
 var isMobile = $(window).width() < 768;
+var $mlh_logo = $("#nav-mlh-trust-badge");
 
 // Makes navbar background appear and changes color of links.
 $navbar_container.hover(function(){
@@ -34,13 +35,13 @@ $(document).scroll(function() {
 		}
 	} else {
 		if ($(document).scrollTop() > $(window).height()) {
-			console.log('white it');
 			isPastFrontPage = true;
 			whiteBackground();
+			$mlh_logo.css({'visibility': 'visible', 'opacity': '1'});
 		} else {
-			console.log('don\'t white it');
 			isPastFrontPage = false;
 			transparentBackground();
+			$mlh_logo.css({'opacity': '0', 'visibility': 'hidden'});
 		}
 	}
 });
