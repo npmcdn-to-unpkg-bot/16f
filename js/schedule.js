@@ -104,7 +104,7 @@ var config = {
         circle: '#000000',
         text: '#000000'
     },
-    fontSize: 15,
+    fontSize: 18,
     fontFamily: 'nevis',
     circleSize: 3,
     textPadding: 10,

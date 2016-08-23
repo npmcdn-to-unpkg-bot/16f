@@ -10,57 +10,59 @@ var $header_container = $("#header_container");
 var $social = $("li i");
 var mobileScrollBack = false;
 var isHoveringOver = false;
-
+var isPastFrontPage = false;
+var isMobile = $(window).width() < 768;
 
 // Makes navbar background appear and changes color of links.
 $navbar_container.hover(function(){
 	isHoveringOver = true;
-
-	$links.css("color", "#2F2F2F");
-	$before_link.css("background-color", "#2F2F2F");
-
-	$logo.attr("src", "/images/final_logo.png");
-
-
-	colorLogosPink();
-
-
+	whiteBackground();
 }, function(){
 	isHoveringOver = false;
-
-	$links.css("color", "white");
-	$before_link.css("background-color", "white");
-
-	$logo.attr("src", "/images/dubhacks_logo_white.svg");
-	// $color_band.css("opacity", "0");
-	colorLogosWhite();
+	if (!isPastFrontPage) transparentBackground();
 });
 
 // Changes color of social media links after it scrolls past
 // header seaction.
 $(document).scroll(function() {
-	var size = $(window).width();
-	if (size < 768) {
+	isMobile = $(window).width() < 768;
+	if (isMobile) {
 		if (!$(document).scrollTop() > $header_container.offset().top) {
 			$navbar_container.css("display", "flex");
 		} else {
 			$navbar_container.css("display", "none");
 		}
-	} else if (!isHoveringOver && $(document).scrollTop() > $header_container.outerHeight()) {
-		colorLogosWhite();
 	} else {
-		colorLogosWhite();
+		if ($(document).scrollTop() > $(window).height()) {
+			console.log('white it');
+			isPastFrontPage = true;
+			whiteBackground();
+		} else {
+			console.log('don\'t white it');
+			isPastFrontPage = false;
+			transparentBackground();
+		}
 	}
 });
 
 // Changes color of social media links to pink.
-function colorLogosPink () {
+function whiteBackground () {
+	$links.css("color", "#2F2F2F");
+	$before_link.css("background-color", "#2F2F2F");
+	// $color_band.css("opacity", "1");
+	$navbar_container.css("background-color", "rgba(255, 255, 255, 1)");
+	$logo.attr("src", "/images/final_logo.png");
 	$social.css("color", "#ea1875");
 	$logo.attr("src", "/images/final_logo.png");
 }
 
 // Changes color of social media links to white.
-function colorLogosWhite () {
+function transparentBackground () {
+	$links.css("color", "white");
+	$before_link.css("background-color", "white");
+	$logo.attr("src", "/images/dubhacks_logo_white.svg");
+	// $color_band.css("opacity", "0");
+	$navbar_container.css("background-color", "rgba(255, 255, 255, 0)");
 	$social.css("color", "white");
 	$logo.attr("src", "/images/dubhacks_logo_white.svg");
 }
