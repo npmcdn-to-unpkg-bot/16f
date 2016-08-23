@@ -24,15 +24,15 @@
       <li class="in_page_links"><a href="/#faq_container" >FAQ</a></li>
       <li class="in_page_links"><a href="/#sponsor_container">Sponsors</a></li>
 	  <li class="in_page_links"><a href="https://dubhacks.co/codeofconduct">Code of Conduct</a></li>
-      <li class="navbar_contact_link" id="fb">
-        <a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><img src="../images/facebook_white.png"></a>
-      </li>
-      <li class="navbar_contact_link" id="twitter">
-        <a target="_twit" href="https://twitter.com/DubHacks?lang=en"><img src="../images/twitter_white.png"></a>
-      </li>
-      <li class="navbar_contact_link"  id="mail">
-        <a href="mailto:info@dubhacks.co"><img src="../images/email_white.png"></a>
-      </li>
+		<li class="navbar_contact_link" id="fb">
+			<a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+		</li>
+		<li class="navbar_contact_link" id="twitter">
+			<a target="_twit" href="https://twitter.com/DubHacks?lang=en"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+		</li>
+		<li class="navbar_contact_link"  id="mail">
+			<a href="mailto:info@dubhacks.co"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+		</li>
     </ul>
 		</div>
     <div id="team_container">
@@ -72,18 +72,16 @@
 			</div>
 		</div>
 		<script>
-			function colorLogosPink () {
-				$("#fb > a > img").attr("src", "../images/facebook_pink.png");
-				$("#twitter > a > img").attr("src", "../images/twitter_pink.png");
-				$("#mail > a > img").attr("src", "../images/email_pink.png");
-				$("#navbar_dubhacks_logo").attr("src", "../images/final_logo.png");
-			}
-			function colorLogosWhite () {
-				$("#fb > a > img").attr("src", "../images/facebook_white.png");
-				$("#twitter > a > img").attr("src", "../images/twitter_white.png");
-				$("#mail > a > img").attr("src", "../images/email_white.png");
-				$("#navbar_dubhacks_logo").attr("src", "../images/dubhacks_logo_white.svg");
-			}
+		function colorLogosPink () {
+			$("#navbar_dubhacks_logo").attr("src", "/images/final_logo.png");
+			$("li i").css("color", "#ea1875");
+		}
+
+		// Changes color of social media links to white.
+		function colorLogosWhite () {
+			$("#navbar_dubhacks_logo").attr("src", "/images/dubhacks_logo_white.svg");
+			$("li i").css("color", "white");
+		}
 		</script>
   </body>
 </html>

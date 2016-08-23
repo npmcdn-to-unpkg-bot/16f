@@ -7,9 +7,7 @@ var $color_band = $("#color_band");
 var $logo = $("#navbar_dubhacks_logo");
 var $header_container = $("#header_container");
 
-var $fb = $("#fb > a > img");
-var $twitter = $("#twitter > a > img");
-var $mail = $("#mail > a > img");
+var $social = $("li i");
 var mobileScrollBack = false;
 var isHoveringOver = false;
 var isPastFrontPage = false;
@@ -54,9 +52,8 @@ function whiteBackground () {
 	// $color_band.css("opacity", "1");
 	$navbar_container.css("background-color", "rgba(255, 255, 255, 1)");
 	$logo.attr("src", "/images/final_logo.png");
-	$fb.attr("src", "/images/facebook_pink.png");
-	$twitter.attr("src", "/images/twitter_pink.png");
-	$mail.attr("src", "/images/email_pink.png");
+	$social.css("color", "#ea1875");
+	$logo.attr("src", "/images/final_logo.png");
 }
 
 // Changes color of social media links to white.
@@ -66,7 +63,6 @@ function transparentBackground () {
 	$logo.attr("src", "/images/dubhacks_logo_white.svg");
 	// $color_band.css("opacity", "0");
 	$navbar_container.css("background-color", "rgba(255, 255, 255, 0)");
-	$fb.attr("src", "/images/facebook_white.png");
-	$twitter.attr("src", "/images/twitter_white.png");
-	$mail.attr("src", "/images/email_white.png");
+	$social.css("color", "white");
+	$logo.attr("src", "/images/dubhacks_logo_white.svg");
 }
