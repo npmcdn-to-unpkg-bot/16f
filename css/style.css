@@ -829,9 +829,6 @@ li i {
 }
 
 #logo_container #mlh {
-	-webkit-filter: none;
-	filter: none;
-	-moz-filter: none;
 	height: 10vh;
 	display: inline;
 }
