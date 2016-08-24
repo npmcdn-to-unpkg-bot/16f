@@ -825,21 +825,15 @@ li i {
 }
 
 .partner_logo {
-	height: 5vh;
-}
-
-#mlh-trust-badge {
-	height: auto;
+	height: 10vh;
 }
 
 #logo_container #mlh {
 	-webkit-filter: none;
 	filter: none;
 	-moz-filter: none;
-	height: auto;
-	max-width:100px;
-	min-width:60px;
-	width:10%
+	height: 10vh;
+	display: inline;
 }
 
 /*
