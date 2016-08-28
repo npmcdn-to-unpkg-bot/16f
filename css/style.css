@@ -34,6 +34,7 @@ body {
 	background: #8C8;
 	counter-increment: gallery-cell;
 	text-align: center;
+	text-shadow: 3px 3px 2px #333;
 }
 
 .carousel-cell img {
@@ -337,6 +338,7 @@ li i {
 	margin: 2vh auto;
 	display: block;
 	pointer-events:none;
+	text-shadow: 1px 1px 2px #333;
 }
 
 #date-box:hover {
@@ -408,6 +410,7 @@ li i {
 	display: inline-block;
 	vertical-align: middle;
 	transition: background-color 0.2s ease;
+	text-shadow: 1px 1px 2px #333;
 }
 
 .button a {
