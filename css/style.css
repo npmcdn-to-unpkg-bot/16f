@@ -420,6 +420,7 @@ li i {
 .button:hover {
 	background-color: rgba(250, 250, 250, 1);
 	cursor: pointer;
+	text-shadow: none;
 }
 
 .button:hover a {
