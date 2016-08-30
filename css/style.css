@@ -265,7 +265,7 @@ li i {
 }
 
 #nav-mlh-trust-badge {
-	
+
 	transition: opacity 0.2s ease;
 }
 
@@ -338,9 +338,10 @@ li i {
 	margin: 2vh auto;
 	display: block;
 	pointer-events:none;
+}
+.box-with-shadow {
 	text-shadow: 1px 1px 2px #333;
 }
-
 #date-box:hover {
 	color: black;
 	background-color: white;
@@ -410,7 +411,6 @@ li i {
 	display: inline-block;
 	vertical-align: middle;
 	transition: background-color 0.2s ease;
-	text-shadow: 1px 1px 2px #333;
 }
 
 .button a {
@@ -925,23 +925,23 @@ li i {
 
 #meet_team {
 	width: 30vw;
+	transition: background-color 0.2s ease;
 }
 
 #meet_team h3 {
 	font-family: Nevis;
-	border: 5px white solid;
+	border: #fff 3px solid;
 	padding: 10px;
 	display: inline-block;
 	font-size: 200%;
-	opacity: 0.7;
-
+	background-color: rgba(250, 250, 250, 0.5);
 	transition: all 0.2s ease;
 }
 
 #meet_team h3:hover {
 	cursor: pointer;
-	margin-top: 10px;
-	opacity: 1;
+	background-color: white;
+	color: black;
 }
 
 #meet_team a, #meet_team a:visited {
@@ -1358,7 +1358,7 @@ li i {
 	}*/
 
 	#logo_container .plat_logo, #logo_container .gold_logo, #logo_container .silver_logo, #logo_container .bronze_logo, #logo_container .partner_logo {
-		
+
 		width: auto;
 		max-width: 90%;
 	}
