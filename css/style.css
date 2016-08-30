@@ -338,9 +338,10 @@ li i {
 	margin: 2vh auto;
 	display: block;
 	pointer-events:none;
+}
+.box-with-shadow {
 	text-shadow: 1px 1px 2px #333;
 }
-
 #date-box:hover {
 	color: black;
 	background-color: white;
@@ -410,7 +411,6 @@ li i {
 	display: inline-block;
 	vertical-align: middle;
 	transition: background-color 0.2s ease;
-	text-shadow: 1px 1px 2px #333;
 }
 
 .button a {
@@ -935,7 +935,6 @@ li i {
 	display: inline-block;
 	font-size: 200%;
 	background-color: rgba(250, 250, 250, 0.5);
-	text-shadow: 1px 1px 2px #333;
 	transition: all 0.2s ease;
 }
 
