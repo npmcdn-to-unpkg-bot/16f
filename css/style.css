@@ -503,7 +503,9 @@ li i {
 	letter-spacing: 1px;
 	text-align: center;
 }
-
+#statement ul li b {
+	color: rgb(242,34,117);
+}
 #airplane_container {
 	list-style: none;
 	display: flex;
@@ -532,7 +534,9 @@ li i {
 #mission1 {
 	padding-bottom: 10px;
 }
-
+#believe {
+	color: #ea1875;
+}
 #mission2 {
 }
 #mission3 {
